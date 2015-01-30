@@ -12,4 +12,5 @@ category: [programming, site]
 collections: [resume, home, blog, projects]
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+
