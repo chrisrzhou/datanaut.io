@@ -1,0 +1,35 @@
+---
+layout: default
+title: Resume
+url: /resume
+site-orientation: nav-left
+---
+{% assign resume = site.resume | sort: "weight" %}
+<!-- header -->
+<header>
+  <h1><i class="fa fa-file"></i> Resume</h1>
+  <p>Chris R. Zhou</p>
+</header>
+
+
+<!-- resume navtabs -->
+<div class="resume">
+  <p class="instructions">Select a section to view resume details.</p>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    {% for section in resume %}
+    <li>
+      <a href="#{{ section.title }}" data-toggle="tab">{{ section.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    {% for section in resume %}
+    <div class="tab-pane" id="{{ section.title }}">
+      {{ section.content }}
+    </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,154 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Open Sans", sans-serif;
+$base-font-size:   1.4em;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       black;
+$background-color: white;
+$nav-background-color: #f8f8f8;
+$brand-color:      steelblue;
+$brand-color-inverse: white;
+$link-color: #c9961e;
+
+$grey-color:       #999999;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+$h1-color: $brand-color;
+$h2-color: #9aa9bf;
+$h3-color: #999999;
+
+
+
+// Width of the content area
+$content-width:    800px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+"base",
+"syntax-highlighting"
+;
+
+
+
+// main styles
+.main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.instructions {
+  color: $grey-color;
+  font-style: italic;
+}
+
+// header styles
+header {
+  margin-bottom: 30px;
+
+  p {
+    margin-top: -10px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: $grey-color;
+  }
+}
+
+
+// hero styles
+.hero {
+  background-image: url("./../images/hero/hero.png");
+  background-size: 100% 100%;
+  height: 250px;
+}
+
+
+// navbar styles
+.navbar-brand {
+  color: $brand-color !important;
+}
+
+ul.nav {
+  a, {
+    color: $brand-color !important;
+  }
+
+  a:hover {
+    color: $brand-color-inverse !important;
+    background-color: $brand-color !important;
+  }
+}
+
+
+// footer styles
+footer {
+  padding-top: 5px;
+  text-align: center;
+
+  a, p {
+    margin: 5px auto;
+    color: $brand-color !important;
+    font-size: 0.85em;
+    font-style: italic;
+    line-height: 1.0;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+}
+
+// thumbnail styles
+.thumbnail:hover {
+  background-color: lighten($brand-color, 45%);
+  transition: all .2s ease-in-out;
+  transform: scale(1.05);
+}
+
+
+// Recent post styles
+.post-link {
+  font-size: 1.2em;
+}
+
+.post-meta {
+  margin: 5px 0;
+  color: $grey-color;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+
+// Resume styles
+.resume .tab-content{
+  margin: 50px;
+}

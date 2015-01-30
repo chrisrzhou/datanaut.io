@@ -1,0 +1,15 @@
+# Site settings
+title: Datanaut
+email: christopher.r.zhou@gmail.com
+description: >
+  Exploring, discovering and "charting" Dataspace
+url: ""
+
+username: chrisrzhou
+
+category: [programming, site]
+
+collections: [resume, home, blog, projects]
+
+# Build settings
+markdown: kramdown
