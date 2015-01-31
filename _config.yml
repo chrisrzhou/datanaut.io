@@ -13,4 +13,4 @@ collections: [resume, home, blog, projects]
 
 # Build settings
 markdown: redcarpet
-
+highlighter: pygments

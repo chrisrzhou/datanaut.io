@@ -147,7 +147,7 @@ code {
   font-size: 1em;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #f4f4ff;
+  background-color: #f7f7f7;
 }
 
 code {
@@ -165,7 +165,7 @@ pre {
   }
 }
 
-
+//.highlight pre { white-space: pre; overflow: auto; }
 
 /**
  * Wrapper
