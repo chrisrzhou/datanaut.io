@@ -6,6 +6,7 @@ summary: Hello world?!
 date:   2015-01-03 12:31:31
 category: site
 ---
+
 This is my first post using Jekyll. Pretty cool stuff
 
 #Javascript Test
@@ -24,4 +25,7 @@ Test link up [one directory](./..)
 
 Test link to external [site][external-site]
 
+
+
+<!-- links -->
 [external-site]: http://www.reddit.com/

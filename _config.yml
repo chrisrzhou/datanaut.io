@@ -13,4 +13,5 @@ collections: [resume, home, blog, projects]
 
 # Build settings
 markdown: redcarpet
-highlighter: pygments
+redcarpet:
+    extensions: [with_toc_data]

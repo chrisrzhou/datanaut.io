@@ -18,6 +18,8 @@ html {
 }
 
 body {
+  padding-bottom: 100px;
+  padding-top: 100px;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -27,7 +29,11 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-
+// select all headers with id anchor
+h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
+  padding-top: 100px;
+  margin-top: -100px;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm

@@ -1,53 +1,66 @@
 ---
 layout: default
 title:  Projects
-weight: 4
+weight: 3
 ---
 
 # Projects
-This is a list of open-source public projects that I have done over time.  Most of them are *data-driven* visualizations and analysis writeups.
-
-I strongly believe that *building* projects is the best way to *mastering* learned materials.  My [ongoing self-improvement goal](https://twitter.com/chrisrzhou/status/550347591708184578) is to release a visualization or webapp every 1-2 weeks.
+>   <https://github.com/chrisrzhou>
 
 ------
 
 ## R
-- **Shiny**
-    - Labor Force Statistics ([Writeup]() | [EC2](http://ec2-54-183-164-175.us-west-1.compute.amazonaws.com:3838/LaborForceStatistics/) | [Github](https://github.com/chrisrzhou/RShiny-LaborForceStatistics))
-    - State Crime Rates ([Writeup]() | [EC2](http://ec2-54-183-164-175.us-west-1.compute.amazonaws.com:3838/StateCrimeRates/) | [Github](https://github.com/chrisrzhou/RShiny-StateCrimeRates))
-    - Box Office Mojo ([Writeup]() | [EC2](http://ec2-54-183-164-175.us-west-1.compute.amazonaws.com:3838/BoxOfficeMojo/) | [Github](https://github.com/chrisrzhou/RShiny-BoxOfficeMojo))
-    - Powertochoose ([Writeup]() | [EC2](http://ec2-54-183-164-175.us-west-1.compute.amazonaws.com:3838/PowerToChoose/) | [Github](https://github.com/chrisrzhou/RShiny-PowerToChoose))
-- **Guides**
-    - Shiny EC2 Bootstrap ([link](https://github.com/chrisrzhou/RShiny-EC2Bootstrap))
-    - Opinionated R packages and workflow ([link]())
-    - Opinionated Shiny workflow ([link]())
+### Shiny Visualizations
+A collection of R Shiny visualizations showcasing the lifecycle of data scraping, munging, transformation and 
+interactive visualization.
+-   [State Crime Rates][r-example1-ec2] <sub>([Github][r-example1-github])</sub>
+-   [Labor Force Statistics][r-example2-ec2] <sub>([Github][r-example2-github])</sub>
+-   [Box Office Mojo][r-example3-ec2] <sub>([Github][r-example3-github])</sub>
+-   [Power to Choose][r-example4-ec2] <sub>([Github][r-example4-github])</sub>
+
+### Guides
+-   [R Shiny EC2 Bootstrap][r-guide-ec2-bootstrap]
+-   [Opinionated R Shiny Workflow][r-guide-shiny-workflow]
 
 ------
 
-## Javascript
-- **[bl.ocks.org](http://bl.ocks.org/chrisrzhou)**
-    - Personal collection of D3 / AngularJS Visualizations.
-- **[GRADE](https://grade.herokuapp.com/#/)**
-    - Webapp built to improve and automate the foreign education industry.
-    - Details [here](#websites).
-- **[jsonframes]()**
-    - "dataframe" library extending common usage of Javascript data manipulations while working with `json`.
-    - Goal is to extend Javascript's usability with dataset manipulations, which is currently somewhat lacking when compared to other languages (e.g. Python, R).
+## IPython
+### [Project Euler Solutions][euler-nbviewer]
+These are solutions written for math/algorithmic problems found on <https://projecteuler.net/>.  The solutions are 
+organized in functional and executable IPython package.  My goal is to solve all the problems when I have free time, 
+but the problems seem to be getting a lot harder!  Project solutions are made available on [Github][euler-github].
 
 ------
 
-## Python
-- **IPython**
-    - Project Euler Solutions ([Github](https://github.com/chrisrzhou/nbEuler) | [nbViewer](http://nbviewer.ipython.org/github/chrisrzhou/nbEuler/tree/master/notebooks/))
+## Web Applications
+### [bl.ocks.org][]
+Collection of webapps and visualizations built mostly with D3.js and AngularJS, with a focus on code organization and
+visualization of generic datasets.
+
+
+### [Datanaut][]
+This is my personal homepage/blog where I organize all my projects, ideas, thoughts and opinions on my passionate 
+journey through data science and visualizations.  The site is statically generated with Jekyll.
 
 ------
 
-## Websites
-- **[Datanaut Homepage](https://chrisrzhou.github.io/)**
-    - Homepage/blog where I organize my projects and thoughts about data, analysis, the fun, and the serious.
-    - `jekyll` powered.
-    - Open-source on [Github](https://github.com/chrisrzhou/chrisrzhou.github.io).
-- **[GRADE](https://grade.herokuapp.com/#/)**
-    - Startup webapp organizing and automating the foreign education equivalency industry in the US. 
-    - Working as the *lead* frontend engineer and architect using AngularJS.
-    - This webapp is built with a `RESTful` API data-driven foundation.
+
+<!-- web application links -->
+[bl.ocks.org]: http://bl.ocks.org/chrisrzhou
+[Datanaut]: http://chrisrzhou.datanaut.io/
+
+<!-- r links -->
+[r-example1-ec2]: http://shiny.vis.datanaut.io/StateCrimeRates/
+[r-example2-ec2]: http://shiny.vis.datanaut.io/LaborForceStatistics/
+[r-example3-ec2]: http://shiny.vis.datanaut.io/BoxOfficeMojo/
+[r-example4-ec2]: http://shiny.vis.datanaut.io/PowerToChoose/
+[r-example1-github]: https://github.com/chrisrzhou/RShiny-StateCrimeRates
+[r-example2-github]: https://github.com/chrisrzhou/RShiny-LaborForceStatistics
+[r-example3-github]: https://github.com/chrisrzhou/RShiny-BoxOfficeMojo
+[r-example4-github]: https://github.com/chrisrzhou/RShiny-PowerToChoose
+[r-guide-ec2-bootstrap]: https://github.com/chrisrzhou/RShiny-EC2Bootstrap
+[r-guide-shiny-workflow]: https://github.com/chrisrzhou/RShiny-EC2Bootstrap
+
+<!-- python links -->
+[euler-nbviewer]: http://nbviewer.ipython.org/github/chrisrzhou/nbEuler/blob/master/notebooks/notebook_001.ipynb
+[euler-github]: https://github.com/chrisrzhou/nbEuler

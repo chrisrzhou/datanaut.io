@@ -29,24 +29,20 @@ d3.vis.datanaut.io
 chrisrzhou.datanaut.io
 ```
 
-I also managed to get the Github pages registered to the `chrisrzhou.datanaut.io`
-subdomain by adding a `CNAME` file containing the desired domain name, and
-making sure that AWS Route 53 contains the registered `CNAME` entry pointing
+I also managed to get the Github pages registered to the `chrisrzhou.datanaut.io` subdomain by adding a `CNAME` file 
+containing the desired domain name, and making sure that AWS Route 53 contains the registered `CNAME` entry pointing
 to `chrisrzhou.github.io`.
 
-I successfully learned and created AWS EC2 `Elastic IPs`, which allows for a 
-more permanent allocation of IP to the EC2 instance.  I wasn't aware that
-Public IPs in EC2s could be potentially reset if the server restarts, so this
-was helpful in organizing the site.
+I successfully learned and created AWS EC2 `Elastic IPs`, which allows for a  more permanent allocation of IP to the 
+EC2 instance.  I wasn't aware that Public IPs in EC2s could be potentially reset if the server restarts, so this was 
+helpful in organizing the site.
 
 You can view the "re-routed" R Shiny Visualizations on EC2 [here][shiny ec2]
 
-I might do a writeup on a guide for AWS Route 53 and AWS VPC sometime in the
-future :)
+I might do a writeup on a guide for AWS Route 53 and AWS VPC sometime in the future :)
 
-**BUT ALAS!** There is still a **LOT** of stuff left to do on this site.  I had 
-to delegate some time to learning and organizing my other Github projects,
-and there's still work to be done with GRADE.
+**BUT ALAS!** There is still a **LOT** of stuff left to do on this site.  I had to delegate some time to learning and
+ organizing my other Github projects, and there's still work to be done with GRADE.
 
 
 <!-- links -->

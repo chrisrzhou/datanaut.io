@@ -19,6 +19,7 @@ $nav-background-color: #f8f8f8;
 $brand-color:      steelblue;
 $brand-color-inverse: white;
 $link-color: #c9961e;
+$theme-grey-color:       #ddd;
 
 $grey-color:       #999999;
 $grey-color-light: lighten($grey-color, 40%);
@@ -56,13 +57,6 @@ $on-laptop:        800px;
 "syntax-highlighting"
 ;
 
-
-
-// main styles
-.main {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
 
 .instructions {
@@ -108,6 +102,7 @@ ul.nav {
 }
 
 
+
 // footer styles
 footer {
   padding-top: 5px;
@@ -149,6 +144,30 @@ footer {
 
 
 // Resume styles
-.resume .tab-content{
-  margin: 50px;
+.resume {
+
+  ul.nav-tabs {
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid $theme-grey-color;
+  }
+
+  // scrollyspy tab styles
+  ul.nav-tabs {
+    li {
+      margin: 0;
+      border-top: 1px solid #ddd;
+    }
+
+    li.active a, li.active a:hover {
+      color: $brand-color-inverse !important;
+      background: $brand-color !important;
+      border: 1px solid #0088cc;
+    }
+  }
+
+  ul.nav-tabs.affix {
+    top: 30px; /* Set the top position of pinned element */
+  }
 }
