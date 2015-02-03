@@ -4,30 +4,31 @@
 @charset "utf-8";
 
 
-
-// Our variables
+// font variables
 $base-font-family: "Open Sans", sans-serif;
-$base-font-size:   1.4em;
+$base-font-size:   1.3em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
-
 $spacing-unit:     30px;
 
-$text-color:       black;
-$background-color: white;
-$nav-background-color: #f8f8f8;
-$brand-color:      steelblue;
-$brand-color-inverse: white;
-$link-color: #c9961e;
-$theme-grey-color:       #ddd;
-
-$grey-color:       #999999;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-$h1-color: $brand-color;
-$h2-color: #9aa9bf;
-$h3-color: #999999;
-
+//colors variables
+$text-color: #6B534D;
+$background-color: #FCFDF8;
+$primary-color: #39718F;
+$secondary-color: #CF6A3A;
+$tertiary-color: #8e8168;
+$primary-inverse-color: #FFFFFF;
+$h1-color: $primary-color;
+$h2-color: $secondary-color;
+$h3-color: $tertiary-color;
+$link-color: #CB8383;
+$link-hover-color: $primary-color;
+$grey-color: #999999;
+$grey-color-light: lighten($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
+$code-background-color: #F8F8F8;
+$code-border-color: #cccccc;
+$nav-offset: 70px;
 
 
 // Width of the content area
@@ -58,19 +59,19 @@ $on-laptop:        800px;
 ;
 
 
-
-.instructions {
+// general styles
+.text-small {
+  font-size: 0.9em;
   color: $grey-color;
   font-style: italic;
 }
 
+
 // header styles
 header {
-  margin-bottom: 30px;
-
+  margin-bottom: 40px;
   p {
-    margin-top: -10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-style: italic;
     color: $grey-color;
   }
@@ -79,95 +80,88 @@ header {
 
 // hero styles
 .hero {
-  background-image: url("./../images/hero/hero.png");
-  background-size: 100% 100%;
+  background-image: url("/images/hero/hero.png");
+  background-size: 100%;
   height: 250px;
 }
 
 
 // navbar styles
-.navbar-brand {
-  color: $brand-color !important;
-}
-
-ul.nav {
-  a, {
-    color: $brand-color !important;
+.navbar {
+  background-color: $background-color;
+  border-bottom: 1px solid $grey-color-light;
+  font-size: 1.2em;
+  a {
+    color: $primary-color !important;
+    text-decoration: none;
   }
-
   a:hover {
-    color: $brand-color-inverse !important;
-    background-color: $brand-color !important;
+    color: $secondary-color !important;
   }
 }
 
+
+
+// navigation offsets styles
+h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
+  padding-top: $nav-offset;
+  margin-top: -$nav-offset;
+}
 
 
 // footer styles
 footer {
-  padding-top: 5px;
+  height: 85px;
+  padding: 10px 0;
   text-align: center;
 
-  a, p {
-    margin: 5px auto;
-    color: $brand-color !important;
-    font-size: 0.85em;
+  p {
+    font-size: 0.9em;
     font-style: italic;
-    line-height: 1.0;
   }
 
-  .container {
-    width: 50%;
+  .social {
+    margin-top: -15px;
   }
 
 }
 
-// thumbnail styles
-.thumbnail:hover {
-  background-color: lighten($brand-color, 45%);
-  transition: all .2s ease-in-out;
-  transform: scale(1.05);
-}
-
-
-// Recent post styles
-.post-link {
-  font-size: 1.2em;
-}
-
-.post-meta {
-  margin: 5px 0;
-  color: $grey-color;
-  font-size: 0.85em;
-  font-style: italic;
+// post styles
+.post {
+  .thumbnail {
+    background-color: $background-color;
+  }
+  .thumbnail:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+  }
 }
 
 
 // Resume styles
 .resume {
-
-  ul.nav-tabs {
-    width: 140px;
-    margin-top: 20px;
-    border-radius: 4px;
-    border: 1px solid $theme-grey-color;
+  header {
+    margin-bottom: 5px;
   }
-
-  // scrollyspy tab styles
-  ul.nav-tabs {
-    li {
-      margin: 0;
-      border-top: 1px solid #ddd;
-    }
-
-    li.active a, li.active a:hover {
-      color: $brand-color-inverse !important;
-      background: $brand-color !important;
-      border: 1px solid #0088cc;
+  .affix {
+    top: 0;
+    padding-top: 80px;
+    width: $content-width;
+  }
+  .resume-body {
+    margin-top: 75px + $nav-offset;
+    section {
+      padding-bottom: 25px;
+      margin-bottom: 75px;
+      border-bottom: 5px solid $grey-color-light;
     }
   }
+  h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
+    padding-top: 175px + $nav-offset;
+    margin-top: -(175px + $nav-offset);
+  }
 
-  ul.nav-tabs.affix {
-    top: 30px; /* Set the top position of pinned element */
+  hr {
+    margin: 20px auto;
   }
 }

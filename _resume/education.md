@@ -11,8 +11,9 @@ weight: 4
 
 ## Destinations
 ### Rice University
-### Bachelor of Science in Physics
-*Aug 2006 - Dec 2009*
+**Bachelor of Science in Physics**
+
+-   Aug 2006 - Dec 2009
 -   2nd major: Mathematics
 -   GPA: 3.67/4.00
 
@@ -38,7 +39,6 @@ weight: 4
 ### Other
 -   [Code School][]
 
-------
 
 <!-- edx links -->
 [6.00.1x Intro to Computer Science and Programming Using Python (MIT)]: https://s3.amazonaws.com/verify.edx.org/downloads/abd618485c874c7799c396be44d6d171/Certificate.pdf

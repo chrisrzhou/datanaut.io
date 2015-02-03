@@ -3,9 +3,9 @@
 
   {% for post in site.posts %}
   {% if post.category == "site" %}
-  <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-  <h3 class="post-link"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  <p class="post-meta" >{{ post.summary }}</p>
+  <p class="text-small">{{ post.date | date: "%b %-d, %Y" }}</p>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p>{{ post.summary }}</p>
   <hr />
   {% endif %}
   {% endfor %}

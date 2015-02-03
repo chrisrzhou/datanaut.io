@@ -5,22 +5,19 @@ weight: 3
 ---
 
 # Projects
->   <https://github.com/chrisrzhou>
+>   Learning, building, and sharing on the open-source <https://github.com/chrisrzhou>
 
 ------
 
-## R
-### Shiny Visualizations
+## R Shiny Visualizations
 A collection of R Shiny visualizations showcasing the lifecycle of data scraping, munging, transformation and 
 interactive visualization.
--   [State Crime Rates][r-example1-ec2] <sub>([Github][r-example1-github])</sub>
--   [Labor Force Statistics][r-example2-ec2] <sub>([Github][r-example2-github])</sub>
--   [Box Office Mojo][r-example3-ec2] <sub>([Github][r-example3-github])</sub>
--   [Power to Choose][r-example4-ec2] <sub>([Github][r-example4-github])</sub>
 
-### Guides
+-   [State Crime Rates][r-example1-ec2] ([Github][r-example1-github])
+-   [Labor Force Statistics][r-example2-ec2] ([Github][r-example2-github])
+-   [Box Office Mojo][r-example3-ec2] ([Github][r-example3-github])
+-   [Power to Choose][r-example4-ec2] ([Github][r-example4-github])
 -   [R Shiny EC2 Bootstrap][r-guide-ec2-bootstrap]
--   [Opinionated R Shiny Workflow][r-guide-shiny-workflow]
 
 ------
 
@@ -37,12 +34,11 @@ but the problems seem to be getting a lot harder!  Project solutions are made av
 Collection of webapps and visualizations built mostly with D3.js and AngularJS, with a focus on code organization and
 visualization of generic datasets.
 
+------
 
 ### [Datanaut][]
 This is my personal homepage/blog where I organize all my projects, ideas, thoughts and opinions on my passionate 
 journey through data science and visualizations.  The site is statically generated with Jekyll.
-
-------
 
 
 <!-- web application links -->

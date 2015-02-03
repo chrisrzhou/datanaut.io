@@ -4,27 +4,30 @@ title: Resume
 url: /resume
 site-orientation: nav-left
 ---
-
 {% assign resume = site.resume | sort: "weight" %}
-<body data-spy="scroll" data-target="#myScrollspy">
-<!-- header -->
-<header>
-  <h1><i class="fa fa-file"></i> Resume</h1>
-  <p>Chris R. Zhou</p>
-</header>
 
+<body data-spy="scroll" data-target="#resume-tabs" data-offset="0">
 <div class="resume">
-  <div class="col-xs-4" id="myScrollspy">
-    <ul class="nav nav-tabs nav-stacked affix-top" data-spy="affix" data-offset-top="100">
+
+  <!-- resume tabs-->
+  <nav id="resume-tabs" class="navbar affix">
+    <header>
+      <h1>Resume</h1>
+      <p>Chris R. Zhou</p>
+    </header>
+    <ul class="nav nav-tabs">
       {% for section in resume %}
       <li><a href="#{{ section.title }}">{{ section.title }}</a></li>
       {% endfor %}
     </ul>
-  </div>
-  <div class="col-xs-8">
+  </nav>
+
+  <!-- resume body-->
+  <div class="resume-body">
     {% for section in resume %}
-    <div id="{{ section.title }}">{{ section.content }}</div>
+    <section id="{{ section.title }}">{{ section.content }}</section>
     {% endfor %}
   </div>
+
 </div>
 </body>

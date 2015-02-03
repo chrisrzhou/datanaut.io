@@ -9,23 +9,21 @@ weight: 2
 
 ------
 
-## Languages
+### Languages
 -   R, Python, Javascript, Bash, some Hive
 
-## Data/Visualization
+### Data/Visualization
 -   Tableau, D3.js, ggplot2, ggvis
 -   SQL, ETL, dplyr, reshape, pandas,
 -   scraping, munging and mining
 
-## Frameworks
+### Frameworks
 -   AngularJS, shiny, some Django
 
-## Proficiencies
+### Proficiencies
 -   MVC, REST, APIs, git
 -   Object-oriented programming, some functional programming
 -   AWS (EC2, S3, Route 53, VPC)
 
-## Office
+### Office
 -   Excel, Access, VBA, Oracle, Cognos
-
-----

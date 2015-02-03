@@ -15,3 +15,5 @@ collections: [resume, home, blog, projects]
 markdown: redcarpet
 redcarpet:
     extensions: [with_toc_data]
+
+permalink: pretty

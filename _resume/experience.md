@@ -47,7 +47,6 @@ weight: 1
 -   **Jack-of-all-"data"-trades** employing relevant tools and technologies (R, Python, VBA, Oracle) to engineer 
     creative solutions for many other process-improvement and business insight requests.
 
-------
 
 <!-- links -->
 [Reliant Energy]: https://www.reliant.com/
