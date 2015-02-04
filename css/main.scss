@@ -12,22 +12,24 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 //colors variables
-$text-color: #6B534D;
-$background-color: #FCFDF8;
-$primary-color: #39718F;
-$secondary-color: #CF6A3A;
-$tertiary-color: #8e8168;
+$text-color: #4E4441;
+$background-color: #F2F2ED;
+$primary-color: #0388A6;
+$secondary-color: #F44D27;
+$tertiary-color: #4E443C;
 $primary-inverse-color: #FFFFFF;
 $h1-color: $primary-color;
 $h2-color: $secondary-color;
 $h3-color: $tertiary-color;
-$link-color: #CB8383;
-$link-hover-color: $primary-color;
-$grey-color: #999999;
+$grey-color: #888E8E;
 $grey-color-light: lighten($grey-color, 25%);
 $grey-color-dark: darken($grey-color, 25%);
-$code-background-color: #F8F8F8;
-$code-border-color: #cccccc;
+$code-background-color: #EEEEEE;
+$code-border-color: #EEEEEE;
+$code-color: #6d6d6d;
+$link-color: #c97e7e;
+$link-hover-color: $primary-color;
+
 $nav-offset: 70px;
 
 
@@ -71,6 +73,7 @@ $on-laptop:        800px;
 header {
   margin-bottom: 40px;
   p {
+    margin-top: -10px;
     font-size: 1.1em;
     font-style: italic;
     color: $grey-color;
@@ -99,7 +102,9 @@ header {
     color: $secondary-color !important;
   }
 }
-
+.navbar-nav {  // fix horizontal scroll on collapse
+  margin: auto;
+}
 
 
 // navigation offsets styles
@@ -141,7 +146,20 @@ footer {
 // Resume styles
 .resume {
   header {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
+    .dl-horizontal {
+      margin-left: 35px;
+      font-size: 12px;
+      dt {
+        float: left;
+        text-align: left;
+        width: 75px;
+      }
+      dd{
+        margin-left: 0;
+        width: 300px;
+      }
+    }
   }
   .affix {
     top: 0;
@@ -149,19 +167,19 @@ footer {
     width: $content-width;
   }
   .resume-body {
-    margin-top: 75px + $nav-offset;
+    margin-top: 100px + $nav-offset;
     section {
-      padding-bottom: 25px;
-      margin-bottom: 75px;
+      padding-bottom: 10px;
+      margin-bottom: 50px;
       border-bottom: 5px solid $grey-color-light;
     }
   }
   h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-    padding-top: 175px + $nav-offset;
-    margin-top: -(175px + $nav-offset);
+    padding-top: 200px + $nav-offset;
+    margin-top: -(200px + $nav-offset);
   }
 
   hr {
-    margin: 20px auto;
+    margin: 10px auto;
   }
 }
