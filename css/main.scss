@@ -26,7 +26,7 @@ $grey-color-light: lighten($grey-color, 25%);
 $grey-color-dark: darken($grey-color, 25%);
 $code-background-color: #EEEEEE;
 $code-border-color: #EEEEEE;
-$code-color: #6d6d6d;
+$code-color: $primary-color;
 $link-color: #c97e7e;
 $link-hover-color: $primary-color;
 
