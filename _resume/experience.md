@@ -5,51 +5,61 @@ weight: 1
 ---
 
 #Experience
->   An agile business intelligence analyst by day, employing a rich knowledge of data
->   analytics and visualization tools to produce highly automated and modern
->   interactive visualization reports for the business teams.
->   A driven self-taught developer by night, building and sharing open-source web
->   applications, data visualizations, and findings with the online data community.
+>   An agile business intelligence analyst by day, an entrepreneurial developer/engineer by night.
+
 
 ------
 
 ## Business Intelligence Analyst
-### [Reliant Energy][]
-*an [NRG][] company, 2010 - Present*
+### [Reliant Energy][] (*2010 - Present*)
 
--   **Co-led** high impact **organizational change project** aimed to recover over **$3,000,000** annually through 
+-   **Co-led** high impact **organizational change project** aimed to recover over *$3,000,000* annually through 
     process improvements.
     -   Designed an object-oriented API pricing engine to gather [ERCOT][] industry pricing logic.
-    -   Implemented design with technical and IT teams into company systems.
-    -   This API will consolidate duplicated workflows in existing and future business processes.
+    -   Implemented design with technical and IT teams into company systems, consolidating duplicated workflows in 
+        existing and future business processes.
+    
+-   Core evangelist on **modernizing interactive web-based** business reports and processes:
+    -   Developed and deployed five [R shiny][] interactive web applications interfacing Oracle databases that are 
+        used by over five business teams.
+    -   Reduced dependency on inefficient data reporting through traditional weekly Excel-based processes.
+    -   Examples of open-source R Shiny projects can be found in the [Projects](#projects) section.
 
--   Promoted use of highly automated and  **interactive visualizations** that reduces business dependency on 
-    ineffcient data collection and reporting through traditional weekly Excel reporting.
-    -   Developed and deployed over five [R shiny][] interactive web applications on work servers that are used by 
-        more than five business teams.
-    -   Examples of open-source R shiny projects can be found in the [Projects](#projects) section.
+-   **Reverse-engineered** the company's supply cost transaction Oracle system.
+    -   Re-purposed the ETL process through careful redesign of over 20 tables.
+    -   Cost queries are now executable on-demand, as opposed to a weekly update frequency, generating over *40 hours
+        of time savings* weekly across five business teams.
 
--   **Reverse-engineered** the company's supply cost transaction data system, allowing for on-demand cost queries 
-    instead of waiting on weekly IT reports, generating over **40 hours of time savings** weekly across five 
-    business teams.
+-   **Created** the calculation foundations for business pricing and supply costs, fulfilling pricing for *over 1
+    million* residential customers every year.
 
--   Created the calculation foundations of pricing and supply that the business operates with, fulfilling pricing for
-    **over 1 million** residential customers every year.
-
--   Designed **"company-agnostic"** tools and workstreams using industry knowledge, ensuring that the company can 
-    support the efforts of multi-brand teams and future acquisitions. One of many examples is provided here:
-    -   Researched, designed and implemented a lightweight database system for tracking transmission cost updates in 
-        the ERCOT power grid.
-    -   The system is less than 1,000 rows deep across 5 tables, but has the capability of generating over millions 
-        of combinations of transmission costs, allowing for real-time cost analysis in the industry, agnostic to 
-        company and brands, as opposed to static downloads of huge datasets previously employed.
+-   Focused on building **"company-agnostic"** reports and processes based on researched industry knowledge, ensuring
+    that the company can support the efforts of multi-brand teams and future acquisitions, and have a strong 
+    **long-term  foundation** of business processes and reports to work with.
 
 -   **Jack-of-all-"data"-trades** employing relevant tools and technologies (R, Python, VBA, Oracle) to engineer 
     creative solutions for many other process-improvement and business insight requests.
 
+------
+
+## Lead UI + Visualization + Frontend Developer
+### [GRADE][]  (*2014 - Present*)
+
+*GRADE is a startup company providing data-driven software solutions for global education foreign equivalencies in 
+the US.  The application is still being developed but please email for a preview if you are interested.*
+    
+-   **Co-developed** business directions and decisions within a small agile team.
+
+-   Designed and built the frontend application using AngularJS, with strong focus on **MVC abstractions**.
+    
+-   GRADE is built on a **REST API** with a RoR backend.
+
+-   Designed the UI, styles and unique interactive web visualizations on education data (in D3.js).
+ 
+ 
 
 <!-- links -->
 [Reliant Energy]: https://www.reliant.com/
-[NRG]: https://www.nrg.com/
 [ERCOT]: http://www.ercot.com/
 [R Shiny]: http://shiny.rstudio.com/gallery/
+[GRADE]: /

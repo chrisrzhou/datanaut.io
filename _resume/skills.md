@@ -5,16 +5,16 @@ weight: 2
 ---
 
 # Skills
->   My Swiss Army knife for slicing and dicing data and visualizations.
+>   Indispensable Swiss-army knife for data processing and visualizations
 
 ------
 
 ### Languages
--   R, Python, Javascript, Bash, some Hive
+-   R, Python, JavaScript, Bash
 
 ### Data/Visualization
 -   Tableau, D3.js, ggplot2, ggvis
--   SQL, ETL, dplyr, reshape, pandas,
+-   SQL, ETL, dplyr, reshape, pandas
 -   scraping, munging and mining
 
 ### Frameworks
@@ -23,7 +23,7 @@ weight: 2
 ### Proficiencies
 -   MVC, REST, APIs, git
 -   Object-oriented programming, some functional programming
--   AWS (EC2, S3, Route 53, VPC)
+-   AWS (EC2, S3, Route 53, VPC), some Google Analytics
 
 ### Office
 -   Excel, Access, VBA, Oracle, Cognos

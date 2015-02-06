@@ -80,6 +80,21 @@ li {
 
 
 /**
+ * Links
+ */
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+
+
+
+/**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
@@ -87,34 +102,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 2.0em;
   color: $h1-color;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   color: $h2-color;
 }
 
 h3 {
   font-size: 1.2em;
   color: $h3-color;
-}
-
-
-
-
-/**
- * Links
- */
-a {
-  color: $link-color;
-  text-decoration: underline;
-
-  &:hover {
-    color: $link-hover-color;
-    text-decoration: underline;
-  }
 }
 
 
