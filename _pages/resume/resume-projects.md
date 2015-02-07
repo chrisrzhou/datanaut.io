@@ -1,7 +1,7 @@
 ---
-layout: default
-title:  Projects
+template: resume
 weight: 3
+title: Projects
 ---
 
 # Projects
@@ -22,24 +22,22 @@ links.
 
 ------
 
-## IPython
-### [Project Euler Solutions][euler-nbviewer]
-These are solutions written for math/algorithmic problems found on <https://projecteuler.net/>.  The solutions are 
-organized in a functional and executable IPython package.  My goal is to solve all the problems when I have free time, 
-but the problems seem to be getting a lot harder!  Project solutions are made available on [Github][euler-github].
-
-------
-
 ## Web Applications
 ### [bl.ocks.org][]
 Collection of webapps and visualizations built mostly with D3.js and AngularJS, with a focus on code organization and
 visualization of generic datasets.
 
-------
-
 ### [Datanaut][]
 This is my data homepage/blog where I organize all my projects, ideas, thoughts and opinions on my passionate 
 journey through data science and visualizations.  The site is statically generated with Jekyll.
+
+------
+
+## IPython
+### [Project Euler Solutions][euler-nbviewer]
+These are solutions written for math/algorithmic problems found on <https://projecteuler.net/>.  The solutions are 
+organized in a functional and executable IPython package.  My goal is to solve all the problems when I have free time, 
+but the problems seem to be getting a lot harder!  Project solutions are made available on [Github][euler-github].
 
 
 <!-- web application links -->

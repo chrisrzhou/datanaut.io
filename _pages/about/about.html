@@ -1,9 +1,10 @@
 ---
 layout: default
+permalink: /about/
 title: About
-url: /about
-site-orientation: nav-left
 ---
+
+{% assign about = site.pages | where: "template", "about" | sort: "weight" %}
 
 <!-- header -->
 <header>
@@ -11,7 +12,6 @@ site-orientation: nav-left
   <hr/>
 </header>
 
-{% for section in site.home %}
-
+{% for section in about %}
 {{ section.content }}
 {% endfor %}

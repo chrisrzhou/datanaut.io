@@ -1,12 +1,11 @@
 ---
-layout: default
-title:  Experience
+template: resume
 weight: 1
+title: Experience
 ---
 
 #Experience
 >   An agile business intelligence analyst by day, an entrepreneurial developer/engineer by night.
-
 
 ------
 
@@ -55,8 +54,7 @@ the US.  The application is still being developed but please email for a preview
 -   GRADE is built on a **REST API** with a RoR backend.
 
 -   Designed the UI, styles and unique interactive web visualizations on education data (in D3.js).
- 
- 
+
 
 <!-- links -->
 [Reliant Energy]: https://www.reliant.com/

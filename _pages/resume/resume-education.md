@@ -1,7 +1,7 @@
 ---
-layout: default
-title:  Education
+template: resume
 weight: 4
+title: Education
 ---
 
 # Education
@@ -45,12 +45,12 @@ weight: 4
 [6.00.2x Intro to Computational Thinking and Data Science (MIT)]: https://s3.amazonaws.com/verify.edx.org/downloads/280cfa587a7d4554a2a4ebf8c50782c2/Certificate.pdf
 
 <!-- coursera links -->
-[Introduction to Interactive Programming in Python (Rice)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certiicates/coursera/coursera_970391_interactivepython_2015.pdf
-[Principles of Computing (Rice)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certiicates/coursera/coursera_972069_principlescomputing_2015.pdf
-[R Programming (JHU)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certiicates/coursera/coursera_972578_rprog_2015.pdf
-[The Data Scientist's Toolbox (JHU)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certiicates/coursera/coursera_972573_datascitoolbox_2015.pdf
-[Getting and Cleaning Data (JHU)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certiicates/coursera/coursera_972584_getdata_2015.pdf
-[Internet History, Technology, and Security (U Mich)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certiicates/coursera/coursera_972584_insidetheinternet_2015.pdf
+[Introduction to Interactive Programming in Python (Rice)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certificates/coursera/coursera_970391_interactivepython_2015.pdf
+[Principles of Computing (Rice)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certificates/coursera/coursera_972069_principlescomputing_2015.pdf
+[R Programming (JHU)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certificates/coursera/coursera_972578_rprog_2015.pdf
+[The Data Scientist's Toolbox (JHU)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certificates/coursera/coursera_972573_datascitoolbox_2015.pdf
+[Getting and Cleaning Data (JHU)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certificates/coursera/coursera_972584_getdata_2015.pdf
+[Internet History, Technology, and Security (U Mich)]: https://s3-us-west-1.amazonaws.com/chrisrzhou/certificates/coursera/coursera_972584_insidetheinternet_2015.pdf
 
 <!-- stanford online links -->
 [Introduction to Databases]: https://prod-cert-bucket.s3.amazonaws.com/downloads/40c469ea9b4e43b580340dc7f8fb1ff6/Certificate.pdf

@@ -1,7 +1,7 @@
 ---
-layout: default
-title:  Skills
+template: resume
 weight: 2
+title: Skills
 ---
 
 # Skills

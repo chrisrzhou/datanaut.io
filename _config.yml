@@ -1,19 +1,16 @@
 # Site settings
 title: Datanaut
 email: christopher.r.zhou@gmail.com
-description: >
-  Exploring, discovering and "charting" Dataspace
+description: Exploring, discovering and "charting" Dataspace
 url: ""
-
 username: chrisrzhou
+category: [projects, tutorials, influences, art, site]
+collections: [resume, projects]
+include: ["_pages"]
 
-category: [programming, site]
 
-collections: [resume, home, blog, projects]
 
 # Build settings
 markdown: redcarpet
 redcarpet:
-    extensions: [with_toc_data]
-
-permalink: pretty
+    extensions: [with_toc_data]  # to add id to headers

@@ -17,16 +17,6 @@ html {
   overflow-y: scroll;
 }
 
-body {
-  padding-top: 100px;
-  padding-bottom: 150px;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  color: $text-color;
-  background-color: $background-color;
-}
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -99,8 +89,10 @@ a {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+  a {
+    text-decoration: underline;
+  }
 }
-
 h1 {
   font-size: 2.0em;
   color: $h1-color;

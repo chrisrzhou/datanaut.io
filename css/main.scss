@@ -29,7 +29,9 @@ $code-color: $secondary-color;
 $link-color: $secondary-color;
 $link-hover-color: $tertiary-color;
 
-$nav-offset: 70px;
+// paddings
+$nav-padding: 75px;
+$footer-padding: 150px;
 
 
 // Width of the content area
@@ -58,6 +60,18 @@ $on-laptop:        800px;
 "base",
 "syntax-highlighting"
 ;
+
+
+// body styles
+body {
+  padding-top: $nav-padding;
+  padding-bottom: $footer-padding;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background-color;
+}
 
 
 // header styles
@@ -99,8 +113,8 @@ header {
 
 // navigation offsets styles
 h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-  padding-top: $nav-offset;
-  margin-top: -$nav-offset;
+  padding-top: $nav-padding;
+  margin-top: -$nav-padding;
 }
 
 
@@ -136,40 +150,43 @@ footer {
 // Resume styles
 .resume {
   header {
-    margin-bottom: 25px;
+    margin: 0;
     .dl-horizontal {
       margin-left: 35px;
       font-size: 12px;
       dt {
         float: left;
         text-align: left;
-        width: 75px;
+        width: 50px;
       }
       dd{
         margin-left: 0;
-        width: 300px;
+        width: 250px;
       }
     }
   }
   .affix {
     top: 0;
-    padding-top: 80px;
+    padding-top: $nav-padding;
     width: $content-width;
   }
   .resume-body {
-    margin-top: 100px + $nav-offset;
+    margin-top: 100px + $nav-padding;
     section {
-      padding-bottom: 10px;
-      margin-bottom: 50px;
+      padding-bottom: 15px;
+      margin-bottom: 60px;
       border-bottom: 5px solid $grey-color-light;
     }
-  }
-  h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-    padding-top: 200px + $nav-offset;
-    margin-top: -(200px + $nav-offset);
   }
 
   hr {
     margin: 10px auto;
   }
+
+  h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
+    padding-top: 180px + $nav-padding;  // add margin-top + padding-bottom + margin-bottom + border-bottom + hr
+    margin-top: -(180px + $nav-padding);
+  }
+
+
 }

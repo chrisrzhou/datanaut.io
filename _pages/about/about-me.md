@@ -1,24 +1,8 @@
 ---
-layout: default
+template: about
 title:  About
-weight: 1
+weight: 2
 ---
-
-## About Site
-
->   **[-naut][]** (suffix): 
->   Forms nouns meaning a voyager, farer, or tripper
-
-------
-
-A datanaut is a voyager exploring data space.
- 
-This is a documented journey of my discoveries and learnings of data and visualizatons.  I intend to keep notes for 
-future self-reference, and to share my findings and creations as I "chart" the data space (yes pun intended :D)
-
-This site is powered by [Jekyll][] and [Github Pages][].
-
-------
 
 ## About Me
 
@@ -65,9 +49,6 @@ cancer.  We share our residence with our two awesome cats, `Metal` and `Sneakers
 >   Signal fading...
 
 <!-- links -->
-[-naut]: http://en.wiktionary.org/wiki/-naut
-[Jekyll]: http://jekyllrb.com/
-[Github Pages]: https://github.com/chrisrzhou/datanaut.io
 [autodidactism]: http://en.wikipedia.org/wiki/Autodidacticism
 [osteosarcoma]: http://en.wikipedia.org/wiki/Osteosarcoma
 [Google]: https://www.google.com/
