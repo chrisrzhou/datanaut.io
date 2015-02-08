@@ -1,17 +1,19 @@
 ---
 layout: default
 permalink: /about/
-title: About
+title: about
 ---
 
 {% assign about = site.pages | where: "template", "about" | sort: "weight" %}
 
 <!-- header -->
 <header>
-  <h1><i class="fa fa-user"></i> About</h1>
+  <h1><i class="fa fa-user"></i> about</h1>
   <hr/>
 </header>
 
 {% for section in about %}
-{{ section.content }}
+<section id="{{ section.title }}">
+  {{ section.content }}
+</section>
 {% endfor %}

@@ -1,12 +1,11 @@
 ---
 layout: post
-author: Chris Zhou
 title:  R Shiny Labor Force Statistics Writeup
-summary: A data analysis and visualization writeup for the Labo Force Statistics R Shiny app
+summary: A data analysis and visualization writeup for the Labor Force Statistics R Shiny app
 date:   2015-02-04 23:37:00
 edited: 2015-02-34 23:38:00
-category: [programming, writeup, analysis]
-tags: [writeup, r, shiny]
+category: visualizations
+tags: [analysis, labor force, unemployment, r, shiny]
 ---
 
 [Project Link][]

@@ -1,34 +1,30 @@
 ---
 layout: default
 permalink: "/blog/"
-title: Blog
+title: blog
 ---
 
 <!-- header -->
 <header>
-  <h1><i class="fa fa-pencil-square-o"></i> Blog</h1>
-  <p>(in development)</p>
+  <h1><i class="fa fa-pencil-square-o"></i> blog</h1>
+  <p>Launch into a wormhole portal and start exploring!</p>
   <hr/>
 </header>
-{{ site.categories }}
-{% capture tags %}
-{% for tag in site.tags %}
-{{ tag[0] }}
-{% endfor %}
-{% endcapture %}
-{% assign sortedtags = tags | split:' ' | sort %}
 
-{% for tag in sortedtags %}
-<h3 id="{{ tag }}">{{ tag }}</h3>
-<ul>
-  {% for post in site.tags[tag] %}
-  <li>{{ post.date | date: "%b %-d, %Y" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+{% for category in site.category %}
+{% assign categoryName = category[0] %}
+{% assign categoryDescription = category[1] %}
+{% assign posts = site.posts | where: "category", categoryName %}
+<div class="col-sm-6 blog">
+  <div class="thumbnail">
+    <div class="caption">
+      <h2>
+        <a href="{{ /categoryName/ }}">/{{ categoryName }}</a>
+        <small><span class="badge">{{ posts.size }}</span></small>
+      </h2>
+      <p class="text-grey">{{ categoryDescription }}</p>
+    </div>
+  </div>
+</div>
 {% endfor %}
 
-{% for site in site.pages %}
-  {% if site.page == "resume" %}
-  {{ site.title }}
-  {% endif %}
-{% endfor %}

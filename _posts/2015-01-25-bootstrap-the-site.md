@@ -1,16 +1,16 @@
 ---
 layout: post
-author: Chris Zhou
 title:  Bootstraping the Site
 summary: Integrating Twitter bootstrap
 date:   2015-01-25 11:35:31
 category: site
+tags: [bootstrap, collections, jekyll]
 ---
 
 I've been spending the last 2-3 days building this site, and adding in Twitter Bootstrap elements where needed.
 
 The use of [Jekyll collections][] to organize the site modules has been very helpful.  A few things that I'm thinking
- of doing is to understand how blog tags / hashtags work.
+ of doing is to understand how blog tags/hashtags work.
 
 As soon as I'm done building the basic layout of the site and site modules, I'll be adding contents.  Roughly the 
 site will be organized with the following modules:

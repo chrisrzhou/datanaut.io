@@ -31,7 +31,7 @@ $link-hover-color: $tertiary-color;
 
 // paddings
 $nav-padding: 75px;
-$footer-padding: 150px;
+$footer-height: 100px;
 
 
 // Width of the content area
@@ -62,28 +62,46 @@ $on-laptop:        800px;
 ;
 
 
-// body styles
+// general styles
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   padding-top: $nav-padding;
-  padding-bottom: $footer-padding;
+  padding-bottom: 50px;
+  margin-bottom: $footer-height;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
   color: $text-color;
   background-color: $background-color;
 }
+.text-grey, .text-small {
+  color: $grey-color;
+  font-style: italic;
+}
+.text-small {
+  font-size: 10px;
+}
+.badge {
+  background-color: $grey-color;
+}
+
 
 
 // header styles
 header {
   margin-bottom: 40px;
   p {
-    margin-top: -10px;
+    line-height: 0.5;
     font-size: 1.1em;
     font-style: italic;
     color: $grey-color;
   }
 }
+
 
 
 // hero styles
@@ -92,6 +110,7 @@ header {
   background-size: 100%;
   height: 250px;
 }
+
 
 
 // navbar styles
@@ -111,6 +130,7 @@ header {
 }
 
 
+
 // navigation offsets styles
 h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
   padding-top: $nav-padding;
@@ -118,39 +138,65 @@ h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
 }
 
 
+
+// section styles
+section {
+  padding-bottom: 15px;
+  margin-bottom: 60px;
+  border-bottom: 5px solid $grey-color-light;
+}
+
+
+
 // footer styles
 footer {
-  height: 85px;
-  padding: 10px 0;
+  border-top: 1px solid $grey-color-light;
+  padding-top: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  background-color: $background-color;
   text-align: center;
-
   p {
-    font-size: 0.9em;
+    color: $grey-color;
     font-style: italic;
   }
-
-  .social {
-    margin-top: -15px;
+  a {
+    color: $primary-color !important;
   }
-
+  a:hover {
+    color: $secondary-color !important;
+  }
 }
 
-// post styles
-.post {
+
+
+// thumbnail styles
+.thumbnail {
+  background-color: $background-color;
+}
+.thumbnail:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.05);
+}
+
+
+
+// blog styles
+.blog {
   .thumbnail {
-    background-color: $background-color;
+    height: 125px;
   }
-  .thumbnail:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.05);
-  }
+  margin-bottom: 20px;
 }
+
 
 
 // Resume styles
 .resume {
   header {
-    margin: 0;
+    margin-bottom: 20px;
     .dl-horizontal {
       margin-left: 35px;
       font-size: 12px;
@@ -166,27 +212,14 @@ footer {
     }
   }
   .affix {
-    top: 0;
     padding-top: $nav-padding;
     width: $content-width;
   }
   .resume-body {
     margin-top: 100px + $nav-padding;
-    section {
-      padding-bottom: 15px;
-      margin-bottom: 60px;
-      border-bottom: 5px solid $grey-color-light;
-    }
   }
-
-  hr {
-    margin: 10px auto;
-  }
-
   h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-    padding-top: 180px + $nav-padding;  // add margin-top + padding-bottom + margin-bottom + border-bottom + hr
+    padding-top: 180px + $nav-padding;
     margin-top: -(180px + $nav-padding);
   }
-
-
 }

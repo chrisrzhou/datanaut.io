@@ -60,13 +60,14 @@ ul, ol {
   margin-left: $spacing-unit;
 }
 
-li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
+li > p ~ ul {  // fix nested lists (reduce spacing on first li and increase spacing on last li)
+  li:first-child {
+    margin-top: -1.0em;
+  }
+  li:last-child {
+    margin-bottom: 1.0em;
   }
 }
-
 
 
 /**
@@ -117,7 +118,7 @@ blockquote {
   color: $grey-color;
   border-left: 5px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  font-size: 1.0em;
+  font-size: 1.2em;
   font-style: italic;
 
   > :last-child {

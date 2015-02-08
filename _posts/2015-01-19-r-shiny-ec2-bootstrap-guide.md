@@ -1,12 +1,10 @@
 ---
 layout: post
-author: Chris Zhou
 title:  R Shiny EC2 Bootstrap Guide
 summary: Quickly spinning up a R shiny server on EC2
 date:   2015-01-19 19:37:00
-edited: 2015-01-30 23:38:00
-category: [programming, guides]
-tags: [guides, github, r, shiny, aws, ec2]
+category: tutorials
+tags: [github, r, shiny, aws, ec2]
 ---
 
 I wrote a guide on [Github][github project] to quickly bootstrap an AWS EC2 instance with R Shiny.

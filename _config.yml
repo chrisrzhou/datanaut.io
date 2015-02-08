@@ -1,11 +1,14 @@
 # Site settings
-title: Datanaut
+title: datanaut
 email: christopher.r.zhou@gmail.com
-description: Exploring, discovering and "charting" Dataspace
+description: Exploring, discovering and "charting" the Dataverse
 url: ""
 username: chrisrzhou
-category: [projects, tutorials, influences, art, site]
-collections: [resume, projects]
+category:
+  tutorials: "Detailed step-by-step tutorials on creating visualizations and organizing data and code projects."
+  visualizations: "Collection of visualizations and analysis.  Most of them are built in D3.js, Tableau, and R."
+  site: "Check out news and updates on what's improving on this site."
+  random: "Everything else here, the fun and the serious."
 include: ["_pages"]
 
 
@@ -14,3 +17,5 @@ include: ["_pages"]
 markdown: redcarpet
 redcarpet:
     extensions: [with_toc_data]  # to add id to headers
+
+permalink: /blog/:categories/:year/:month/:day/:title

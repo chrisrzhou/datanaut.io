@@ -1,10 +1,10 @@
 ---
 layout: post
-author: Chris Zhou
 title:  Hello Jekyll!
 summary: Hello world?!
 date:   2015-01-03 12:31:31
 category: site
+tags: [jekyll]
 ---
 
 This is my first post using Jekyll. Pretty cool stuff

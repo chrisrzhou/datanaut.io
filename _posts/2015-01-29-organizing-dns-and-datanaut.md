@@ -1,19 +1,17 @@
 ---
 layout: post
-author: Chris Zhou
 title:  Organizing DNS and Datanaut
 summary: Buying a domain, registering IPs
 date:   2015-01-29 00:07:00
-edited: 2015-01-31 00:19:00
 category: site
+tags: [dns, aws, route-53, IP]
 ---
 
-Today, I spent a good 6+ hours working on learning how to register a domain
-and subdomains to other IP addresses.  I ended up deciding to organize my
-future sites with the `datanaut.io` domain.
+Today, I spent a good 6+ hours working on learning how to register a domain and subdomains to other IP addresses.  I 
+ended up deciding to organize my future sites with the `datanaut.io` domain.
 
-I bought this domain on [AWS Route 53][] and researched about DNS and IPs, as
-well as rerouting your domains and sub-domains to other IPs and CNAMEs.
+I bought this domain on [AWS Route 53][] and researched about DNS and IPs, as well as rerouting your domains and 
+sub-domains to other IPs and CNAMEs.
 
 This will allow me to organize future subdomains in possibly this fashion:
 

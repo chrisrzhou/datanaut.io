@@ -10,7 +10,7 @@ title: Skills
 ------
 
 ### Languages
--   R, Python, JavaScript, Bash
+-   R, Python, JavaScript, Bash, markdown
 
 ### Data/Visualization
 -   Tableau, D3.js, ggplot2, ggvis
@@ -18,10 +18,10 @@ title: Skills
 -   scraping, munging and mining
 
 ### Frameworks
--   AngularJS, shiny, some Django
+-   AngularJS, shiny, Jekyll, some Django
 
 ### Proficiencies
--   MVC, REST, APIs, git
+-   MVC, REST, APIs, git, some GruntJS
 -   Object-oriented programming, some functional programming
 -   AWS (EC2, S3, Route 53, VPC), some Google Analytics
 

@@ -1,11 +1,10 @@
 ---
 layout: post
-author: Chris Zhou
 title:  Initial Site Design
-summary: CSS styles and abstracting overrall design
-category: site
+summary: CSS styles and abstracting overall design
 date:   2015-02-04 01:32:00
-edited: 2015-02-04 01:32:00
+category: site
+tags: [css, scss, markdown]
 ---
 
 Just put some finishing touches on the design of the site.  I was inspired by the color themes on <http://git-scm.com/>
