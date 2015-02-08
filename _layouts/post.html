@@ -4,11 +4,13 @@ layout: default
 
 <!-- header -->
 <header class="post-detail">
-  <h1>{{ page.title }}</h1>
-  <p>
-    {{ page.date | date: "%b %-d, %Y" }} |
-    Posted in: <a href="/posts/{{ page.category }}">{{ page.category }}</a>
-  </p>
+  <h1>
+    {{ page.title }}<br/>
+    <small>
+      {{ page.date | date: "%b %-d, %Y" }} |
+      Posted in <a href="/posts/{{ page.category }}">{{ page.category }}</a></small>
+    </small>
+  </h1>
   <p>
     {% if page.tags != empty %}
     {% for tag in page.tags %}<a href="">#{{ tag }}, </a>{% endfor %}

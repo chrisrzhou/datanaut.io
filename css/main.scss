@@ -183,7 +183,7 @@ footer {
 .post-summary {
   text-align: center;
   .thumbnail {
-    min-height: 250px;
+    min-height: 200px;
     padding: 10px;
     img {
       height: 100px;
@@ -195,16 +195,19 @@ footer {
 }
 .post-list {
   h2 {
-    margin: 0px;
+    margin: 0;
   }
   .thumbnail {
-    min-height: 350px;
+    height: 325px;
     padding: 10px;
-    img {  // recommend taking pictures that are 3:2 ratio
-      height: auto;
+    .img-container {
       width: 100%;
-      display: block;
-      margin: 10px auto;
+      height: 150px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      img {  // recommend taking pictures that are 300x200 ratio
+        width: 100%;
+      }
     }
   }
 }
@@ -212,6 +215,10 @@ footer {
   text-align: center;
   h1 {
     font-size: 3.0em;
+    small {
+      font-size: 0.5em;
+      font-style: italic;
+    }
   }
   p {
     font-size: 1.0em;

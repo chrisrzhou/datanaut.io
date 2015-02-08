@@ -21,9 +21,11 @@ title: datanaut - posts
         <small><span class="badge">{{ posts.size }}</span></small>
         <a href="{{ section.category }}">{{ section.category }}</a>
       </h2>
-      <a href="{{ section.category }}">
-        <img src="/images/posts-{{ section.category }}.png" />
-      </a>
+      <div class="img-container">
+        <a href="{{ section.category }}">
+          <img src="/images/posts-{{ section.category }}.png" />
+        </a>
+      </div>
       <p class="text-grey">{{ section.description }}</p>
     </div>
   </div>
