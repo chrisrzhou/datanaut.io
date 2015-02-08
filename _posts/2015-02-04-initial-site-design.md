@@ -5,6 +5,7 @@ summary: CSS styles and abstracting overall design
 date:   2015-02-04 01:32:00
 category: site
 tags: [css, scss, markdown]
+thumbnail: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/posts/2015-02-04-initial-site-design/thumbnail.png
 ---
 
 Just put some finishing touches on the design of the site.  I was inspired by the color themes on <http://git-scm.com/>

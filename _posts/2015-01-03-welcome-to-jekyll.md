@@ -5,6 +5,7 @@ summary: Hello world?!
 date:   2015-01-03 12:31:31
 category: site
 tags: [jekyll]
+thumbnail: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/posts/2015-01-03-welcome-to-jekyll/thumbnail.jpg
 ---
 
 This is my first post using Jekyll. Pretty cool stuff

@@ -25,19 +25,19 @@ $h2-color: $secondary-color;
 $h3-color: $tertiary-color;
 $code-background-color: #F3EFE6;
 $code-border-color: #F3EFE6;
-$code-color: $secondary-color;
-$link-color: $secondary-color;
+$code-color: $primary-color;
+$link-color: $primary-color;
 $link-hover-color: $tertiary-color;
 
 // paddings
-$nav-padding: 75px;
+$nav-padding: 70px;
 $footer-height: 100px;
 
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    900px;
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        900px;
 
 
 // Using media queries with like this:
@@ -83,7 +83,7 @@ body {
   font-style: italic;
 }
 .text-small {
-  font-size: 10px;
+  font-size: 11px;
 }
 .badge {
   background-color: $grey-color;
@@ -106,7 +106,7 @@ header {
 
 // hero styles
 .hero {
-  background-image: url("/images/hero/hero.png");
+  background-image: url("/images/hero.png");
   background-size: 100%;
   height: 250px;
 }
@@ -176,21 +176,51 @@ footer {
 .thumbnail {
   background-color: $background-color;
 }
-.thumbnail:hover {
-  transition: all .2s ease-in-out;
-  transform: scale(1.05);
-}
 
 
 
-// blog styles
-.blog {
+// posts styles
+.post-summary {
+  text-align: center;
   .thumbnail {
-    height: 125px;
+    min-height: 250px;
+    padding: 10px;
+    img {
+      height: 100px;
+      width: auto;
+      display: block;
+      margin: 10px auto;
+    }
   }
-  margin-bottom: 20px;
 }
-
+.post-list {
+  h2 {
+    margin: 0px;
+  }
+  .thumbnail {
+    min-height: 350px;
+    padding: 10px;
+    img {  // recommend taking pictures that are 3:2 ratio
+      height: auto;
+      width: 100%;
+      display: block;
+      margin: 10px auto;
+    }
+  }
+}
+.post-detail {
+  text-align: center;
+  h1 {
+    font-size: 3.0em;
+  }
+  p {
+    font-size: 1.0em;
+  }
+  img {
+    height: 300px;
+    width: auto;
+  }
+}
 
 
 // Resume styles
@@ -219,7 +249,7 @@ footer {
     margin-top: 100px + $nav-padding;
   }
   h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-    padding-top: 180px + $nav-padding;
-    margin-top: -(180px + $nav-padding);
+    padding-top: 175px + $nav-padding;
+    margin-top: -(175px + $nav-padding);
   }
 }

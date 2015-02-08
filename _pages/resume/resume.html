@@ -1,10 +1,10 @@
 ---
 layout: default
 permalink: /resume/
-title: resume
+title: datanaut - resume
 ---
 
-{% assign resume = site.pages | where: "template", "resume" | sort: "weight" %}
+{% assign resume = site.pages | where: "page-type", "resume" | sort: "weight" %}
 
 <body data-spy="scroll" data-target="#resume-tabs" data-offset="0">
 <div class="resume">

@@ -1,5 +1,5 @@
 ---
-template: resume
+page-type: resume
 weight: 4
 title: Education
 ---

@@ -4,13 +4,9 @@ email: christopher.r.zhou@gmail.com
 description: Exploring, discovering and "charting" the Dataverse
 url: ""
 username: chrisrzhou
-category:
-  tutorials: "Detailed step-by-step tutorials on creating visualizations and organizing data and code projects."
-  visualizations: "Collection of visualizations and analysis.  Most of them are built in D3.js, Tableau, and R."
-  site: "Check out news and updates on what's improving on this site."
-  random: "Everything else here, the fun and the serious."
 include: ["_pages"]
 
+category: [visualizations, tutorials, other, site]
 
 
 # Build settings
@@ -18,4 +14,4 @@ markdown: redcarpet
 redcarpet:
     extensions: [with_toc_data]  # to add id to headers
 
-permalink: /blog/:categories/:year/:month/:day/:title
+permalink: /posts/:categories/:year/:month/:day/:title

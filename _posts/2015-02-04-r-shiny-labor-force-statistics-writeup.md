@@ -6,6 +6,7 @@ date:   2015-02-04 23:37:00
 edited: 2015-02-34 23:38:00
 category: visualizations
 tags: [analysis, labor force, unemployment, r, shiny]
+thumbnail: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/trend-unemployed-rate.png
 ---
 
 [Project Link][]

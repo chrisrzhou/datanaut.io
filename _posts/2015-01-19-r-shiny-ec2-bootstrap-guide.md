@@ -5,6 +5,7 @@ summary: Quickly spinning up a R shiny server on EC2
 date:   2015-01-19 19:37:00
 category: tutorials
 tags: [github, r, shiny, aws, ec2]
+thumbnail: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-EC2Bootstrap/aws_ec2_workflow.png
 ---
 
 I wrote a guide on [Github][github project] to quickly bootstrap an AWS EC2 instance with R Shiny.
@@ -16,8 +17,6 @@ damn awesome! Here's the guide!
 
 The goal of this guide is to quickly bootstrap R [Shiny][] on an Amazon AWS [EC2][] instance.  We will also walk 
 through a recommended workflow using Github for rapid development on a local machine and the EC2 server instance.
-
-![image: workflow][]
     
 This is an *opiniated* guide created for the following software versions:
 

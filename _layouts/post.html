@@ -1,12 +1,24 @@
 ---
 layout: default
 ---
+
 <!-- header -->
-<header>
+<header class="post-detail">
   <h1>{{ page.title }}</h1>
   <p>
-    {{ page.date | date: "%b %-d, %Y" }}
+    {{ page.date | date: "%b %-d, %Y" }} |
+    Posted in: <a href="/posts/{{ page.category }}">{{ page.category }}</a>
   </p>
+  <p>
+    {% if page.tags != empty %}
+    {% for tag in page.tags %}<a href="">#{{ tag }}, </a>{% endfor %}
+    {% endif %}
+  </p>
+
+  {% if page.thumbnail %}<img src="{{ page.thumbnail }}" />
+  {% else %}<img src="/images/posts-{{ page.category }}.png" />
+  {% endif %}
+
   <hr />
 </header>
 

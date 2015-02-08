@@ -1,5 +1,5 @@
 ---
-template: resume
+page-type: resume
 weight: 1
 title: Experience
 ---

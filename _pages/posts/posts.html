@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: "/posts/"
+title: datanaut - posts
+---
+
+<!-- header -->
+<header>
+  <h1><i class="fa fa-pencil-square-o"></i> posts</h1>
+  <p>Launch into a wormhole and start exploring!</p>
+  <hr/>
+</header>
+
+{% assign sections = site.pages | where: "page-type", "posts" | sort: "weight" %}
+{% for section in sections %}
+{% assign posts = site.posts | where: "category", section.category %}
+<div class="col-sm-6 post-summary">
+  <div class="thumbnail">
+    <div class="caption">
+      <h2>
+        <small><span class="badge">{{ posts.size }}</span></small>
+        <a href="{{ section.category }}">{{ section.category }}</a>
+      </h2>
+      <a href="{{ section.category }}">
+        <img src="/images/posts-{{ section.category }}.png" />
+      </a>
+      <p class="text-grey">{{ section.description }}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+

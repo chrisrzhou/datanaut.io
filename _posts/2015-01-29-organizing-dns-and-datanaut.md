@@ -5,6 +5,7 @@ summary: Buying a domain, registering IPs
 date:   2015-01-29 00:07:00
 category: site
 tags: [dns, aws, route-53, IP]
+thumbnail: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/posts/2015-01-29-organizing-dns-and-datanaut/thumbnail.png
 ---
 
 Today, I spent a good 6+ hours working on learning how to register a domain and subdomains to other IP addresses.  I 

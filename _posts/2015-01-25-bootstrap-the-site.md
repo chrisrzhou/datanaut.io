@@ -5,6 +5,7 @@ summary: Integrating Twitter bootstrap
 date:   2015-01-25 11:35:31
 category: site
 tags: [bootstrap, collections, jekyll]
+thumbnail: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/posts/2015-01-25-bootstrap-the-site/thumbnail.jpg
 ---
 
 I've been spending the last 2-3 days building this site, and adding in Twitter Bootstrap elements where needed.
