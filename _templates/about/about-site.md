@@ -1,6 +1,6 @@
 ---
 template: about
-title:  About
+title:  About Site
 weight: 1
 ---
 

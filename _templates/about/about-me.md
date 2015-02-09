@@ -1,6 +1,6 @@
 ---
 template: about
-title:  About
+title:  About Me
 weight: 2
 ---
 

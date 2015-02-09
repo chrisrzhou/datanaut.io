@@ -6,10 +6,13 @@ url: ""
 username: chrisrzhou
 include: ["_templates"]
 
-category: [visualizations, tutorials, other, site]
-
+category: [visualizations, tutorials, other, site, tags, archive]
+collections:
+  - projects
+  - resume
 
 # Build settings
+timezone: America/Houston
 markdown: redcarpet
 redcarpet:
     extensions: [with_toc_data]  # to add id to headers

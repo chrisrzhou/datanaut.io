@@ -30,7 +30,7 @@ $link-color: $primary-color;
 $link-hover-color: $tertiary-color;
 
 // paddings
-$nav-padding: 70px;
+$nav-padding: 85px;
 $footer-height: 100px;
 
 
@@ -83,10 +83,34 @@ body {
   font-style: italic;
 }
 .text-small {
-  font-size: 11px;
+  margin-top: -0.5em;
+  font-size: 11px !important;
 }
 .badge {
   background-color: $grey-color;
+}
+
+.affix {
+  top: 0;
+  padding-top: $nav-padding;
+  width: 100%;
+}
+.fixed {
+  position: fixed;
+}
+
+
+// navigation offsets styles
+h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
+  padding-top: $nav-padding;
+  margin-top: -$nav-padding;
+}
+
+
+
+// thumbnail styles
+.thumbnail {
+  background-color: $background-color;
 }
 
 
@@ -95,13 +119,11 @@ body {
 header {
   margin-bottom: 40px;
   p {
-    line-height: 0.5;
     font-size: 1.1em;
     font-style: italic;
     color: $grey-color;
   }
 }
-
 
 
 // hero styles
@@ -128,15 +150,6 @@ header {
 .navbar-nav {  // fix horizontal scroll on collapse
   margin: auto;
 }
-
-
-
-// navigation offsets styles
-h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-  padding-top: $nav-padding;
-  margin-top: -$nav-padding;
-}
-
 
 
 // section styles
@@ -171,32 +184,19 @@ footer {
 }
 
 
-
-// thumbnail styles
-.thumbnail {
-  background-color: $background-color;
-}
-
-
-
-// posts styles
+// post styles
 .post-summary {
   text-align: center;
   .thumbnail {
-    min-height: 200px;
+    min-height: 250px;
     padding: 10px;
     img {
       height: 100px;
       width: auto;
-      display: block;
-      margin: 10px auto;
     }
   }
 }
 .post-list {
-  h2 {
-    margin: 0;
-  }
   .thumbnail {
     height: 325px;
     padding: 10px;
@@ -215,48 +215,40 @@ footer {
   text-align: center;
   h1 {
     font-size: 3.0em;
-    small {
-      font-size: 0.5em;
-      font-style: italic;
-    }
   }
   p {
-    font-size: 1.0em;
+    font-size: 1.5em;
   }
   img {
     height: 300px;
     width: auto;
   }
 }
+.post-archive {
+  p {
+    margin-left: $spacing-unit;
+  }
+}
+.post-tags {
+  p {
+    margin-left: $spacing-unit;
+  }
+  padding-bottom: 600px;  // to allow for id anchor links
+}
 
 
 // Resume styles
 .resume {
   header {
-    margin-bottom: 20px;
-    .dl-horizontal {
-      margin-left: 35px;
-      font-size: 12px;
-      dt {
-        float: left;
-        text-align: left;
-        width: 50px;
-      }
-      dd{
-        margin-left: 0;
-        width: 250px;
-      }
-    }
+    margin: 0;
   }
-  .affix {
-    padding-top: $nav-padding;
-    width: $content-width;
-  }
+
   .resume-body {
-    margin-top: 100px + $nav-padding;
+    padding: 0 50px;
+    padding-top: 35 + $nav-padding;
   }
   h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-    padding-top: 175px + $nav-padding;
-    margin-top: -(175px + $nav-padding);
+    padding-top: 125px + $nav-padding;
+    margin-top: -(125px + $nav-padding);
   }
 }
