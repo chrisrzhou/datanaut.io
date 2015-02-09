@@ -9,7 +9,7 @@ layout: default
   </h1>
   <p>
     {{ page.date | date: "%b %-d, %Y" }}
-    <a href="/posts/{{ page.category }}">in {{ page.category }}</a>
+    <a href="/blog/{{ page.category }}">in {{ page.category }}</a>
   </p>
   <hr/>
 
@@ -17,13 +17,13 @@ layout: default
   <p class="text-small">
     {% if page.tags != empty %}
     {% for tag in page.tags %}
-    <a href="/posts/tags/#{{ tag }}">#{{ tag }}</a> |
+    <a href="/blog/tags/#{{ tag }}">#{{ tag }}</a> |
     {% endfor %}
     {% endif %}
   </p>
 
   {% if page.thumbnail %}<img src="{{ page.thumbnail }}" />
-  {% else %}<img src="/images/posts-{{ page.category }}.png" />
+  {% else %}<img src="/images/blog-{{ page.category }}.png" />
   {% endif %}
 
   <hr />

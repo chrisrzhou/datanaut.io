@@ -245,10 +245,10 @@ footer {
 
   .resume-body {
     padding: 0 50px;
-    padding-top: 35 + $nav-padding;
+    padding-top: 60 + $nav-padding;
   }
   h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-    padding-top: 125px + $nav-padding;
-    margin-top: -(125px + $nav-padding);
+    padding-top: 150px + $nav-padding;
+    margin-top: -(150px + $nav-padding);
   }
 }

@@ -1,0 +1,20 @@
+---
+permalink: /projects/
+layout: default
+title: about
+---
+
+{% assign projects = site.projects | sort: "weight" %}
+
+<!-- header -->
+<header>
+  <h1><i class="fa fa-code"></i> projects</h1>
+  <p>Building satellites and machines to visualize and explore the Dataverse</p>
+  <hr/>
+</header>
+
+{% for section in about %}
+<section id="{{ section.title }}">
+  {{ section.content }}
+</section>
+{% endfor %}

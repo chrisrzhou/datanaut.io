@@ -1,17 +1,19 @@
 ---
-permalink: /projects/
+permalink: /resume/
 layout: default
 title: resume
 ---
 
-{% assign resume = site.pages | where: "page-type", "resume" | sort: "weight" %}
+{% assign resume = site.resume | sort: "weight" %}
 
 <body data-spy="scroll" data-target="#resume-tabs" data-offset="0">
 <div class="resume">
+
   <!-- resume tabs-->
   <nav id="resume-tabs" class="navbar affix">
     <header>
-      <h1><i class="fa fa-file-text-o"></i> resume <small>Chris R. Zhou</small></h1>
+      <h1><i class="fa fa-file-text-o"></i> resume</h1>
+      <p>Chris R. Zhou</p>
     </header>
 
     <!-- nav tabs-->
@@ -30,9 +32,6 @@ title: resume
     </section>
     {% endfor %}
   </div>
-{{ site.collections.resume }}
-  {% for section in site.collections.resume %}
-  {{ section.content }}
-  {% endfor %}
+
 </div>
 </body>

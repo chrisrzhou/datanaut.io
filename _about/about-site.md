@@ -1,5 +1,4 @@
 ---
-template: about
 title:  About Site
 weight: 1
 ---

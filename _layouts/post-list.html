@@ -5,7 +5,7 @@ layout: default
 <header>
   <h1>
     <i class="fa fa-pencil-square-o"></i>
-    <a href="/posts/">posts</a>/{{ page.category }}
+    <a href="/blog/">blog</a>/{{ page.category }}
   </h1>
   <p>{{ page.description }}</p>
   <hr/>
@@ -20,7 +20,7 @@ layout: default
       <div class="img-container">
         <a href="{{ post.url }}">
           {% if post.thumbnail %}<img src="{{ post.thumbnail }}" />
-          {% else %}<img src="/images/posts-{{ page.category }}.png" />
+          {% else %}<img src="/images/blog-{{ page.category }}.png" />
           {% endif %}
         </a>
       </div>

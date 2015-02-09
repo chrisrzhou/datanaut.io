@@ -1,17 +1,17 @@
 ---
-permalink: "/posts/"
+permalink: "/blog/"
 layout: default
-title: posts
+title: blog
 ---
 
 <!-- header -->
 <header>
-  <h1><i class="fa fa-pencil-square-o"></i> posts</h1>
+  <h1><i class="fa fa-pencil-square-o"></i> blog</h1>
   <p>Launch into a wormhole and start exploring!</p>
   <hr/>
 </header>
 
-{% assign sections = site.pages | where: "page-type", "posts" | sort: "weight" %}
+{% assign sections = site.blog | sort: "weight" %}
 {% for section in sections %}
 <div class="col-sm-4 post-summary">
   <div class="thumbnail">
@@ -21,7 +21,7 @@ title: posts
       </h2>
       <div class="img-container">
         <a href="{{ section.category }}">
-          <img src="/images/posts-{{ section.category }}.png" />
+          <img src="/images/blog-{{ section.category }}.png" />
         </a>
       </div>
       <p class="text-grey">{{ section.description }}</p>

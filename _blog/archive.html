@@ -1,12 +1,17 @@
 ---
+permalink: "/blog/archive/"
 layout: default
-title: archives
+title: blog/archive
+category: archive
+description: History of blog posts by year and month.
+weight: 6
 ---
+
 <!-- header -->
 <header>
   <h1>
     <i class="fa fa-pencil-square-o"></i>
-    <a href="/posts/">posts</a>/{{ page.category }}
+    <a href="/blog/">blog</a>/{{ page.category }}
   </h1>
   <p>{{ page.description }}</p>
   <hr/>
@@ -24,6 +29,6 @@ title: archives
   <p>
     <span class="text-small">{{ post.date | date: "%m/%d/%Y" }}</span>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <a href="/posts/{{ post.category }}"><span class="text-small">in {{ post.category }}</span></a>
+    <a href="/blog/{{ post.category }}"><span class="text-small">in {{ post.category }}</span></a>
   </p>
   {% endfor %}

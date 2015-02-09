@@ -4,11 +4,12 @@ layout: default
 title: about
 ---
 
-{% assign about = site.pages | where: "template", "about" | sort: "weight" %}
+{% assign about = site.about | sort: "weight" %}
 
 <!-- header -->
 <header>
   <h1><i class="fa fa-user"></i> about</h1>
+  <p>Discover more about datanauts and the Dataverse</p>
   <hr/>
 </header>
 

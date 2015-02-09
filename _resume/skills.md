@@ -1,7 +1,6 @@
 ---
-page-type: resume
-weight: 3
 title: Skills
+weight: 3
 ---
 
 # Skills

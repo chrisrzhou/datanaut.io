@@ -1,7 +1,6 @@
 ---
-page-type: resume
-weight: 5
 title: Education
+weight: 5
 ---
 
 # Education

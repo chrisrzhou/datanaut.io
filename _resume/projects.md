@@ -1,7 +1,6 @@
 ---
-page-type: resume
-weight: 4
 title: Projects
+weight: 4
 ---
 
 # Projects

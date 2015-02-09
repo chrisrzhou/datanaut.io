@@ -1,5 +1,10 @@
 ---
+permalink: "/blog/tags/"
 layout: default
+title: blog/tags
+category: tags
+description: Explore blog posts by tags.
+weight: 5
 ---
 
 {% capture tags %}
@@ -13,12 +18,12 @@ layout: default
 <header>
   <h1 id="tags">
     <i class="fa fa-pencil-square-o"></i>
-    <a href="/posts/">posts</a>/{{ page.category }}
+    <a href="/blog/">posts</a>/{{ page.category }}
   </h1>
   <p>{{ page.description }}</p>
   <p class="text-small">{% for tag in sortedtags %}
     {% assign posts = site.tags[tag] %}
-    <a href="/posts/tags/#{{ tag }}">#{{ tag }} ({{ posts.size }})</a> |
+    <a href="/blog/tags/#{{ tag }}">#{{ tag }} ({{ posts.size }})</a> |
     {% endfor %}</p>
   <hr/>
 </header>
@@ -29,15 +34,16 @@ layout: default
   {% for tag in sortedtags %}
   {% assign posts = site.tags[tag] %}
   <h2 id="{{ tag }}">
-    <span class="badge">{{ posts.size }}</span> <a href="/posts/tags">#</a>{{ tag }}
+    <span class="badge">{{ posts.size }}</span> #{{ tag }}
   </h2>
   {% for post in posts %}
   <p>
     <span class="text-small">{{ post.date | date: "%m/%d/%Y" }}</span>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <a href="/posts/{{ post.category }}"><span class="text-small">in {{ post.category }}</span></a>
+    <a href="/blog/{{ post.category }}"><span class="text-small">in {{ post.category }}</span></a>
   </p>
   {% endfor %}
+  <p><a href="/blog/tags">(back to all tags)</a></p>
   <hr/>
   {% endfor %}
 </section>

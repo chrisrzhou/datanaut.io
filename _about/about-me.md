@@ -1,5 +1,4 @@
 ---
-template: about
 title:  About Me
 weight: 2
 ---

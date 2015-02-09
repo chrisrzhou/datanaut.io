@@ -1,7 +1,6 @@
 ---
-page-type: resume
-weight: 2
 title: Experience
+weight: 2
 ---
 
 # Experience

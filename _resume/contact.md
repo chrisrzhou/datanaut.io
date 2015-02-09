@@ -1,7 +1,6 @@
 ---
-page-type: resume
-weight: 1
 title: Contact
+weight: 1
 ---
 
 # Contact
