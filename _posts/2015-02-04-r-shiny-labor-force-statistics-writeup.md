@@ -3,13 +3,12 @@ layout: post
 title:  R Shiny Labor Force Statistics Writeup
 summary: A data analysis and visualization writeup for the Labor Force Statistics R Shiny app
 date:   2015-02-04 23:37:00
-edited: 2015-02-34 23:38:00
 category: visualizations
 tags: [analysis, labor-force, unemployment, r, shiny]
 thumbnail: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/trend-unemployed-rate.png
 ---
 
-[Project Link][]
+## [Project Link][]
 
 This is a data analysis writeup for the R [Shiny][] application - **Labor Force Statistics**, built to visualize 
 labor statistics trends over a number of variables e.g. races and genders.

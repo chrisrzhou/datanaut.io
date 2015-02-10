@@ -90,14 +90,6 @@ body {
   background-color: $grey-color;
 }
 
-.affix {
-  top: 0;
-  padding-top: $nav-padding;
-  width: 100%;
-}
-.fixed {
-  position: fixed;
-}
 
 
 // navigation offsets styles
@@ -240,15 +232,32 @@ footer {
 // Resume styles
 .resume {
   header {
-    margin: 0;
+    margin-bottom: -5px;
   }
-
+  #resume-tabs {
+    background-color: $background-color;
+    ul {
+      margin: 0;
+    }
+    @media (max-width: 480px) {
+      .nav-tabs > li {
+        font-size: 0.75em;
+      }
+    }
+  }
+  .affix {
+    top: 0;
+    padding-top: $nav-padding;
+    width: 100%;
+  }
+  .wrapper {
+    padding-left: 0;
+  }
   .resume-body {
-    padding: 0 50px;
-    padding-top: 60 + $nav-padding;
+    padding-top: 40px + $nav-padding;
   }
   h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-    padding-top: 150px + $nav-padding;
-    margin-top: -(150px + $nav-padding);
+    padding-top: 130px + $nav-padding;
+    margin-top: -(130px + $nav-padding);
   }
 }
