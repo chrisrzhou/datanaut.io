@@ -1,10 +1,8 @@
 ---
 permalink: /projects/
 layout: default
-title: about
+title: projects
 ---
-
-{% assign projects = site.projects | sort: "weight" %}
 
 <!-- header -->
 <header>
@@ -13,8 +11,22 @@ title: about
   <hr/>
 </header>
 
-{% for section in about %}
-<section id="{{ section.title }}">
-  {{ section.content }}
-</section>
+
+{% assign projects = site.projects | sort: "-date" %}
+{% for project in projects %}
+
+<div class="col-sm-4 post-summary">
+  <div class="thumbnail">
+    <div class="caption">
+      <div class="img-container">
+        <a href="{{ project.permalink }}">
+          <img src="{{ project.thumbnail }}" />
+        </a>
+      </div>
+      <p class="text-small">{{ project.date | date: "%b %-d, %Y" }}</p>
+      <h2><a href="{{ project.permalink }}">{{ project.title }}</a></h2>
+      <p class="text-grey">{{ project.summary }}</p>
+    </div>
+  </div>
+</div>
 {% endfor %}

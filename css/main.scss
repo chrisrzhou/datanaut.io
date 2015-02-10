@@ -121,8 +121,9 @@ header {
 // hero styles
 .hero {
   background-image: url("/images/hero.png");
+  background-repeat: no-repeat;
   background-size: 100%;
-  height: 250px;
+  height: 350px;
 }
 
 
@@ -179,27 +180,15 @@ footer {
 // post styles
 .post-summary {
   text-align: center;
+  .text-small {
+    margin-bottom: 5px;
+  }
   .thumbnail {
-    min-height: 250px;
-    padding: 10px;
+    min-height: 325px;
     img {
+      margin: 20px auto;
       height: 100px;
       width: auto;
-    }
-  }
-}
-.post-list {
-  .thumbnail {
-    height: 325px;
-    padding: 10px;
-    .img-container {
-      width: 100%;
-      height: 150px;
-      overflow: hidden;
-      margin-bottom: 10px;
-      img {  // recommend taking pictures that are 300x200 ratio
-        width: 100%;
-      }
     }
   }
 }
@@ -212,8 +201,8 @@ footer {
     font-size: 1.5em;
   }
   img {
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 60%;
   }
 }
 .post-archive {
@@ -261,3 +250,14 @@ footer {
     margin-top: -(130px + $nav-padding);
   }
 }
+
+
+// Project styles
+.project {
+  overflow-x: hidden;
+  iframe {
+    min-height: 1000px;
+    width: 100%;
+  }
+}
+

@@ -1,39 +1,26 @@
 ---
 layout: default
 ---
-
-<!-- header -->
 <header class="post-detail">
-  <h1>
-    {{ page.title }}
-  </h1>
+  <h1><i class="fa fa-code"></i> {{ page.title }}</h1>
   <p>
-    {{ page.date | date: "%b %-d, %Y" }}
-    <a href="/posts/{{ page.category }}">in {{ page.category }}</a>
+    {{ page.date | date: "%b %-d, %Y" }},
+    <a href="{{ page.iframe }}" target="_blank">original link</a>
   </p>
-  <hr/>
-
   <!-- tags -->
   <p class="text-small">
     {% if page.tags != empty %}
     {% for tag in page.tags %}
-    <a href="/posts/tags/#{{ tag }}">#{{ tag }}</a> |
+    <a href="#">#{{ tag }}</a> |
     {% endfor %}
     {% endif %}
   </p>
-
-  {% if page.thumbnail %}<img src="{{ page.thumbnail }}" />
-  {% else %}<img src="/images/posts-{{ page.category }}.png" />
-  {% endif %}
-
   <hr />
 </header>
 
-
-<!-- article -->
-<article>
-  {{ content }}
-</article>
+<div class="project">
+  <iframe src="{{ page.iframe }}"></iframe>
+</div>
 
 <!-- disqus comments -->
 {% include disqus.html %}
