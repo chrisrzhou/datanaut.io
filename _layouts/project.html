@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: iframe
 ---
 <header class="post-detail">
   <h1><i class="fa fa-code"></i> {{ page.title }}</h1>
@@ -18,9 +18,11 @@ layout: default
   <hr />
 </header>
 
-<div class="project">
+<section class="project">
   <iframe src="{{ page.iframe }}"></iframe>
-</div>
+</section>
 
 <!-- disqus comments -->
-{% include disqus.html %}
+<div class="wrapper">
+  {% include disqus.html %}
+</div>
