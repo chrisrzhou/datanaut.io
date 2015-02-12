@@ -7,6 +7,7 @@
 // font variables
 $base-font-family: "Open Sans", sans-serif;
 $base-font-size:   1.25em;
+$brand-font-family: "Architects Daughter", cursive;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5em;
 $spacing-unit:     30px;
@@ -92,6 +93,7 @@ body {
 
 
 
+
 // navigation offsets styles
 h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
   padding-top: $nav-padding;
@@ -111,6 +113,7 @@ h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
 header {
   margin-bottom: 40px;
   p {
+    font-family: $brand-font-family;
     font-size: 1.1em;
     font-style: italic;
     color: $grey-color;
@@ -118,11 +121,12 @@ header {
 }
 
 
-// hero styles
-.hero {
-  background-image: url("/images/hero.png");
+// splash styles
+.splash {
+  background-image: url("https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/splash.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  width: 100%;
   height: 350px;
 }
 
@@ -143,6 +147,11 @@ header {
 .navbar-nav {  // fix horizontal scroll on collapse
   margin: auto;
 }
+.nav a, .navbar-brand {
+  font-family: $brand-font-family;
+}
+
+
 
 
 // section styles
@@ -163,6 +172,7 @@ footer {
   width: 100%;
   height: $footer-height;
   background-color: $background-color;
+  font-family: $brand-font-family;
   text-align: center;
   p {
     color: $grey-color;
@@ -178,6 +188,26 @@ footer {
 
 
 // post styles
+.frame {
+  background-image: url("https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/motherboard.png");
+  background-repeat: no-repeat;
+  height: 300px;
+  width: auto;
+  .frame-content {
+    position: relative;
+    left: 150px;
+    h2 {
+      top: 500px;
+      left: 200px;
+    }
+    img {
+      display: inline;
+      left: 0;
+      width: 30%;
+      height: auto;
+    }
+  }
+}
 .post-summary {
   text-align: center;
   .text-small {
