@@ -4,29 +4,29 @@ layout: default
 title: projects
 ---
 
+{% assign projects = site.projects | sort: "-date" %}
+
 <!-- header -->
 <header>
-  <h1><i class="fa fa-code"></i> projects</h1>
+  <h1>
+    <a href="/projects/"><i class="fa fa-code"></i></a>
+    projects
+  </h1>
   <p>Building satellites and machines to visualize and explore the Dataverse</p>
-  <hr/>
 </header>
 
 
-{% assign projects = site.projects | sort: "-date" %}
 {% for project in projects %}
-
 <div class="col-sm-4 post-summary">
-  <div class="thumbnail">
-    <div class="caption">
-      <div class="img-container">
-        <a href="{{ project.permalink }}">
-          <img src="{{ project.thumbnail }}" />
-        </a>
-      </div>
-      <p class="text-small">{{ project.date | date: "%b %-d, %Y" }}</p>
-      <h2><a href="{{ project.permalink }}">{{ project.title }}</a></h2>
-      <p class="text-grey">{{ project.summary }}</p>
-    </div>
-  </div>
+  <p class="text-small date">{{ project.date | date: "%b %-d, %Y" }}</p>
+  <a href="{{ project.permalink }}">
+    <img src="{{ project.thumbnail }}" />
+    <h2>{{ project.title }}</h2>
+  </a>
+  <p class="text-small">
+    <a href="{{ project.source-url }}" target="_blank"><i class="fa fa-external-link-square"></i></a>
+    <a href="{{ project.github-url }}" target="_blank"><i class="fa fa-github-square"></i></a>
+    {{ project.language }}
+  </p>
 </div>
 {% endfor %}

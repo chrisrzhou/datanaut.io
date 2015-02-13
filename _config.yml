@@ -1,16 +1,10 @@
 # Site settings
-title: datanaut
+title: datanaut.io
 email: christopher.r.zhou@gmail.com
 description: Exploring, discovering and "charting" the Dataverse
 url: ""
 username: chrisrzhou
 include: ["_pages"]
-image-logo: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/spaceship.png
-image-frame: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/motherboard.png
-image-about: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/datanaut.png
-image-blog: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/wireframe.png
-image-projects: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/datacubes.png
-image-resume: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/spaceship2.png
 
 category: [visualizations, tutorials, other, site, tags, archive]
 collections:

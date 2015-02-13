@@ -4,13 +4,14 @@ layout: default
 title: blog/archive
 category: archive
 description: History of blog posts by year and month.
+thumbnail: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/satellite3.png
 weight: 6
 ---
 
 <!-- header -->
 <header>
   <h1>
-    <i class="fa fa-pencil-square-o"></i>
+    <a href="/blog/"><i class="fa fa-pencil-square-o"></i></a>
     <a href="/blog/">blog</a>/{{ page.category }}
   </h1>
   <p>{{ page.description }}</p>
@@ -32,3 +33,4 @@ weight: 6
     <a href="/blog/{{ post.category }}"><span class="text-small">in {{ post.category }}</span></a>
   </p>
   {% endfor %}
+</section>

@@ -4,6 +4,7 @@ layout: default
 title: blog/tags
 category: tags
 description: Explore blog posts by tags.
+thumbnail: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/datacubes.png
 weight: 5
 ---
 
@@ -17,22 +18,23 @@ weight: 5
 <!-- header -->
 <header>
   <h1 id="tags">
-    <i class="fa fa-pencil-square-o"></i>
-    <a href="/blog/">posts</a>/{{ page.category }}
+    <a href="/blog/"><i class="fa fa-pencil-square-o"></i></a>
+    <a href="/blog/">blog</a>/{{ page.category }}
   </h1>
   <p>{{ page.description }}</p>
   <p class="text-small">{% for tag in sortedtags %}
     {% assign posts = site.tags[tag] %}
-    <a href="/blog/tags/#{{ tag }}">#{{ tag }} ({{ posts.size }})</a> |
+    <a href="/blog/tags/#{{ tag }}">#{{ tag }} ({{ posts.size }})</a> &#149;
     {% endfor %}</p>
   <hr/>
 </header>
 
 
 <!-- tag posts -->
+{% for tag in sortedtags %}
+{% assign posts = site.tags[tag] %}
 <section class="post-tags">
-  {% for tag in sortedtags %}
-  {% assign posts = site.tags[tag] %}
+
   <h2 id="{{ tag }}">
     <span class="badge">{{ posts.size }}</span> #{{ tag }}
   </h2>
@@ -43,7 +45,8 @@ weight: 5
     <a href="/blog/{{ post.category }}"><span class="text-small">in {{ post.category }}</span></a>
   </p>
   {% endfor %}
-  <p><a href="/blog/tags">(back to all tags)</a></p>
+
+  <p class="text-small"><a href="/blog/tags">(back to all tags)</a></p>
   <hr/>
   {% endfor %}
 </section>

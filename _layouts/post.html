@@ -4,9 +4,12 @@ layout: default
 
 <!-- header -->
 <header class="post-detail">
-  <h1><i class="fa fa-pencil-square-o"></i> {{ page.title }}</h1>
+  <h1>
+    <a href="/blog/"><i class="fa fa-pencil-square-o"></i></a>
+    {{ page.title }}
+  </h1>
   <p>
-    {{ page.date | date: "%b %-d, %Y" }},
+    {{ page.date | date: "%b %-d, %Y" }}
     <a href="/blog/{{ page.category }}">in {{ page.category }}</a>
   </p>
 
@@ -14,7 +17,7 @@ layout: default
   <p class="text-small">
     {% if page.tags != empty %}
     {% for tag in page.tags %}
-    <a href="/blog/tags/#{{ tag }}">#{{ tag }}</a> |
+    <a href="/blog/tags/#{{ tag }}">#{{ tag }}</a> &#149;
     {% endfor %}
     {% endif %}
   </p>
@@ -22,8 +25,6 @@ layout: default
   {% if page.thumbnail %}<img src="{{ page.thumbnail }}" />
   {% else %}<img src="/images/blog-{{ page.category }}.png" />
   {% endif %}
-
-  <hr />
 </header>
 
 

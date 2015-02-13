@@ -1,7 +1,7 @@
----
-title:  About Site
-weight: 1
----
+# datanaut.io
+>   Exploring, discovering and "charting" the Dataverse
+
+![image-splash][]
 
 ## About Site
 
@@ -21,9 +21,23 @@ All Artwork and images are designed by myself.  Icons are used from [Font Awesom
 
 datanaut.io is powered by [Jekyll][] and [Github Pages][].  
 
-
 <!-- links -->
 [-naut]: http://en.wiktionary.org/wiki/-naut
 [Font Awesome]: http://fortawesome.github.io/Font-Awesome/
 [Jekyll]: http://jekyllrb.com/
 [Github Pages]: https://pages.github.com/
+
+[image-splash]: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/splash.png
+
+
+## TODOs
+- [x] Finalize Styles
+- [x] Draw ink images
+- [x] Update resume
+- [x] Set up blog sections by categories
+- [x] Set up blog tags
+- [] Set up pagination for blogs/collections (*waiting for this to be incorporated into Jeklly collections*)
+- [] Create Project sections by Language
+- [] Create Art section
+- [] Create Updates/Site in `index.html` (bring in blog and project updates).
+- [] Create People/Influence section

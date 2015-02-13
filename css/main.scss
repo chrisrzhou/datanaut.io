@@ -5,10 +5,10 @@
 
 
 // font variables
-$base-font-family: "Open Sans", sans-serif;
 $base-font-size:   1.25em;
-$brand-font-family: "Architects Daughter", cursive;
 $small-font-size:  $base-font-size * 0.875;
+$base-font-family: "Open Sans", sans-serif;
+$brand-font-family: "Architects Daughter", cursive;
 $base-line-height: 1.5em;
 $spacing-unit:     30px;
 
@@ -19,13 +19,13 @@ $primary-color: #449bb5;
 $secondary-color: #eb5055;
 $tertiary-color: #25a278;
 $grey-color: #b5ac99;
+$code-background-color: #F3EFE6;
+$code-border-color: #F3EFE6;
 $grey-color-light: lighten($grey-color, 25%);
 $grey-color-dark: darken($grey-color, 25%);
 $h1-color: $primary-color;
 $h2-color: $secondary-color;
 $h3-color: $tertiary-color;
-$code-background-color: #F3EFE6;
-$code-border-color: #F3EFE6;
 $code-color: $primary-color;
 $link-color: $primary-color;
 $link-hover-color: $tertiary-color;
@@ -65,8 +65,8 @@ $on-laptop:        900px;
 
 // general styles
 html {
-  position: relative;
-  min-height: 100%;
+  min-height: 100%;  // to push footer to bottom if height of page is less than 100%
+  position: relative; // for project iframes to display right
 }
 
 body {
@@ -80,43 +80,44 @@ body {
   background-color: $background-color;
 }
 .text-grey, .text-small {
+  font-family: $brand-font-family;
   color: $grey-color;
   font-style: italic;
 }
 .text-small {
   margin-top: -0.5em;
-  font-size: 11px !important;
+  font-size: $small-font-size !important;
 }
+
+
+// bootstrap styles
 .badge {
   background-color: $grey-color;
 }
-
-
-
-
-// navigation offsets styles
-h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-  padding-top: $nav-padding;
-  margin-top: -$nav-padding;
-}
-
-
-
-// thumbnail styles
 .thumbnail {
   background-color: $background-color;
 }
 
 
 
+
+// navigation offsets styles to account for fixed navbar padding
+h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+  padding-top: $nav-padding;
+  margin-top: -$nav-padding;
+}
+
+
+
 // header styles
 header {
+  width: 100%;
   margin-bottom: 40px;
   p {
     font-family: $brand-font-family;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-style: italic;
-    color: $grey-color;
+    color: $grey-color-dark;
   }
 }
 
@@ -126,7 +127,7 @@ header {
   background-image: url("https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/splash.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 100%;
+  width: 75%;
   height: 350px;
 }
 
@@ -135,7 +136,7 @@ header {
 // navbar styles
 .navbar {
   background-color: $background-color;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 3px solid $grey-color-light;
   font-size: 1.2em;
   a {
     color: $primary-color !important;
@@ -157,7 +158,7 @@ header {
 // section styles
 section {
   padding-bottom: 15px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   border-bottom: 5px solid $grey-color-light;
 }
 
@@ -165,7 +166,7 @@ section {
 
 // footer styles
 footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 3px solid $grey-color-light;
   padding-top: 15px;
   position: absolute;
   bottom: 0;
@@ -188,47 +189,40 @@ footer {
 
 
 // post styles
-.frame {
-  background-image: url("https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/motherboard.png");
-  background-repeat: no-repeat;
-  height: 300px;
-  width: auto;
-  .frame-content {
-    position: relative;
-    left: 150px;
-    h2 {
-      top: 500px;
-      left: 200px;
-    }
-    img {
-      display: inline;
-      left: 0;
-      width: 30%;
-      height: auto;
-    }
-  }
-}
 .post-summary {
-  text-align: center;
-  .text-small {
-    margin-bottom: 5px;
-  }
-  .thumbnail {
-    min-height: 325px;
-    img {
-      margin: 20px auto;
-      height: 100px;
-      width: auto;
+  min-height: 250px;
+  padding: 10px 25px;
+  margin: 20px 0;
+  img {
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: auto;
+    height: 100px;
+    @media (max-width: 770px) {
+      height: 150px;
     }
+  }
+  a:hover {
+    h2 {
+      color: $link-hover-color;
+    }
+  }
+  .fa {
+    color: $grey-color;
+    margin-right: 5px;
+  }
+  .date {
+    margin: 0;
   }
 }
 .post-detail {
   text-align: center;
   h1 {
-    font-size: 3.0em;
+    font-size: 2.6em;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   img {
     height: auto;
@@ -251,10 +245,10 @@ footer {
 // Resume styles
 .resume {
   header {
-    margin-bottom: -5px;
+    margin: 0;
   }
   #resume-tabs {
-    background-color: $background-color;
+    background-color: $background-color;  // to hide header for scrollspy
     ul {
       margin: 0;
     }
@@ -269,22 +263,18 @@ footer {
     padding-top: $nav-padding;
     width: 100%;
   }
-  .wrapper {
-    padding-left: 0;
-  }
   .resume-body {
-    padding-top: 40px + $nav-padding;
+    padding-top: 10px + $nav-padding;
   }
-  h1[id], h2[id], h3[id] {  // to account for fixed navbar padding
-    padding-top: 130px + $nav-padding;
-    margin-top: -(130px + $nav-padding);
+  h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {  // to account for fixed navbar padding
+    padding-top: 100px + $nav-padding;
+    margin-top: -(100px + $nav-padding);
   }
 }
 
 
 // Project styles
 .project {
-  overflow: hidden;
   iframe {
     min-height: 1000px;
     width: 100%;
