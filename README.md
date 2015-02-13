@@ -1,4 +1,4 @@
-# datanaut.io
+# [datanaut.io][]
 >   Exploring, discovering and "charting" the Dataverse
 
 ![image-splash][]
@@ -21,13 +21,6 @@ All Artwork and images are designed by myself.  Icons are used from [Font Awesom
 
 datanaut.io is powered by [Jekyll][] and [Github Pages][].  
 
-<!-- links -->
-[-naut]: http://en.wiktionary.org/wiki/-naut
-[Font Awesome]: http://fortawesome.github.io/Font-Awesome/
-[Jekyll]: http://jekyllrb.com/
-[Github Pages]: https://pages.github.com/
-
-[image-splash]: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/splash.png
 
 
 ## TODOs
@@ -41,3 +34,14 @@ datanaut.io is powered by [Jekyll][] and [Github Pages][].
 - [ ] Create Art section
 - [ ] Create Updates/Site in `index.html` (bring in blog and project updates).
 - [ ] Create People/Influence section
+
+
+
+<!-- links -->
+[datanaut.io]: http://chrisrzhou.datanaut.io/
+[-naut]: http://en.wiktionary.org/wiki/-naut
+[Font Awesome]: http://fortawesome.github.io/Font-Awesome/
+[Jekyll]: http://jekyllrb.com/
+[Github Pages]: https://pages.github.com/
+
+[image-splash]: https://s3-us-west-1.amazonaws.com/chrisrzhou/datanaut/site/images/ink/splash.png
