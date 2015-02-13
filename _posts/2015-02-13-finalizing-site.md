@@ -21,11 +21,11 @@ As of today's writing, I wrote a TODOs list for what's remaining on the site:
 - [x] Update resume
 - [x] Set up blog sections by categories
 - [x] Set up blog tags
-- [] Set up pagination for blogs/collections (*waiting for this to be incorporated into Jeklly collections*)
-- [] Create Project sections by Language
-- [] Create Art section
-- [] Create People/Influence section
-- [] Create Updates/Site in `index.html` (bring in blog and project updates).
+- [ ] Set up pagination for blogs/collections (*waiting for this to be incorporated into Jeklly collections*)
+- [ ] Create Project sections by Language
+- [ ] Create Art section
+- [ ] Create People/Influence section
+- [ ] Create Updates/Site in `index.html` (bring in blog and project updates).
 
 [Jekyll][] currently lacks some flexibility in `paginators`.  It is currently not possible, without the use of a plugin
 to paginate collections or subsets of posts in multiple pages.  I think there's some development going on Github on 

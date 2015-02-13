@@ -36,8 +36,8 @@ datanaut.io is powered by [Jekyll][] and [Github Pages][].
 - [x] Update resume
 - [x] Set up blog sections by categories
 - [x] Set up blog tags
-- [] Set up pagination for blogs/collections (*waiting for this to be incorporated into Jeklly collections*)
-- [] Create Project sections by Language
-- [] Create Art section
-- [] Create Updates/Site in `index.html` (bring in blog and project updates).
-- [] Create People/Influence section
+- [ ] Set up pagination for blogs/collections (*waiting for this to be incorporated into Jeklly collections*)
+- [ ] Create Project sections by Language
+- [ ] Create Art section
+- [ ] Create Updates/Site in `index.html` (bring in blog and project updates).
+- [ ] Create People/Influence section
