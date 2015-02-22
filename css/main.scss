@@ -14,19 +14,19 @@ $spacing-unit:     30px;
 
 //colors variables
 $text-color: #000000;
-$background-color: #fffcf5;
+$background-color: #fffcfa;
 $primary-color: #449bb5;
 $secondary-color: #eb5055;
 $tertiary-color: #25a278;
 $grey-color: #b5ac99;
-$code-background-color: #F3EFE6;
-$code-border-color: #F3EFE6;
+$code-background-color: #f4f4f4;
+$code-border-color: #f4f4f4;
 $grey-color-light: lighten($grey-color, 25%);
 $grey-color-dark: darken($grey-color, 25%);
 $h1-color: $primary-color;
 $h2-color: $secondary-color;
 $h3-color: $tertiary-color;
-$code-color: $primary-color;
+$code-color: $text-color;
 $link-color: $primary-color;
 $link-hover-color: $tertiary-color;
 
